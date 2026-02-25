@@ -28,7 +28,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <Link
               key={item.path}
@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile controls */}
-        <div className="flex lg:hidden items-center gap-3">
+        <div className="flex md:hidden items-center gap-3">
           <button
             onClick={() => setLang(lang === 'de' ? 'en' : 'de')}
             className="flex items-center gap-1 text-sm font-medium text-muted-foreground px-2 py-1 rounded-full border border-border"
@@ -71,7 +71,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background border-b border-border overflow-hidden"
+            className="md:hidden bg-background border-b border-border overflow-hidden"
           >
             <nav className="px-6 py-6 flex flex-col gap-4">
               {navItems.map((item) => (
