@@ -75,20 +75,26 @@ const Home = () => {
             <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
               {t(
                 'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
-                'The world is moving fast. The options are endless. The expectations are high.'
+                'There was a time when choosing once meant choosing for life.'
               )}
             </h2>
             <div className="space-y-4 text-lg leading-relaxed max-w-2xl opacity-70">
               <p>
                 {t(
                   'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
-                  "Young people are expected to commit early — in a system built for straight-line careers."
+                  "That time has passed. Today, paths shift. Industries evolve. New ideas appear overnight."
                 )}
               </p>
               <p>
                 {t(
                   'Nur gibt es heute nicht mehr den einen klaren Weg, auf den man sich verlassen kann.',
-                  'But there is no single clear path to rely on anymore.'
+                  "That's not chaos. It's possibility."
+                )}
+              </p>
+              <p className="font-heading font-semibold opacity-100">
+                {t(
+                  '',
+                  'And possibility asks one thing: Who are you? And what will you build with it?'
                 )}
               </p>
             </div>
@@ -104,19 +110,19 @@ const Home = () => {
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
                 {t(
                   '2Morrow Lab baut eine Plattform für Entwicklungspartnerschaften.',
-                  '2Morrow Lab is building a platform for development partnerships.'
+                  "You don't need to have everything figured out."
                 )}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {t(
                   'Junge Menschen. Unternehmen. Schulen. Gemeinsam.',
-                  'Young people. Companies. Schools. Together.'
+                  'You need self-knowledge. You need courage. You need people who believe in you.'
                 )}
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
                 {t(
                   'So wird dein Weg etwas, das du bewusst gestaltest, nicht etwas, das dem Zufall überlassen bleibt.',
-                  "So your path becomes something you shape intentionally — not something left to chance."
+                  "2Morrow Lab brings those things together. So your next step is something you choose — not something you guess."
                 )}
               </p>
             </motion.div>
@@ -142,19 +148,19 @@ const Home = () => {
             <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance glow-text">
               {t(
                 'Die Zukunft gehört denen, die ihren eigenen Weg finden.',
-                'The future belongs to those who find their own way.'
+                'We connect young people, schools, and companies to create real development partnerships.'
               )}
             </h2>
             <p className="text-lg opacity-60 leading-relaxed max-w-2xl mx-auto">
               {t(
                 'Wenn sich die Spielregeln ändern, bleibst du nicht stehen. Du gehst weiter.',
-                "When the rules change, you don't stand still. You keep moving."
+                "Not as candidates. Not as test subjects. But as collaborators."
               )}
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg font-heading font-semibold">
-              <span>{t('Mit Mut.', 'With courage.')}</span>
-              <span className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent">{t('Mit Weitblick.', 'With vision.')}</span>
-              <span>{t('Mit Menschen, die an dich glauben.', 'With people who believe in you.')}</span>
+              <span>{t('Mit Mut.', "Because leadership doesn't start later.")}</span>
+              <span className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent">{t('Mit Weitblick.', 'It starts when you decide')}</span>
+              <span>{t('Mit Menschen, die an dich glauben.', 'to take yourself seriously.')}</span>
             </div>
           </motion.div>
         </div>
@@ -248,19 +254,19 @@ const Home = () => {
               {t('Dein KI-Co-Pilot', 'Your AI Co-Pilot')}
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight glow-text">
-              {t('Du gestaltest dein Leben.', 'You design your life.')}
+              {t('Du gestaltest dein Leben.', 'Your AI co-pilot helps you think clearly.')}
             </h2>
             <div className="space-y-4 text-lg opacity-70 leading-relaxed max-w-2xl">
               <p>
                 {t(
                   'Dein KI-Co-Pilot hilft dir, klarer zu denken, Zusammenhänge zu erkennen und Ideen in konkrete Schritte zu bringen.',
-                  'Your AI Co-Pilot helps you think more clearly, see connections, and turn ideas into concrete steps.'
+                  'See patterns. Turn ideas into action.'
                 )}
               </p>
               <p>
                 {t(
                   'Nicht um für dich zu entscheiden. Sondern um Möglichkeiten zu erweitern.',
-                  "Not to decide for you. But to expand what's possible."
+                  "It doesn't design your life. You do. It simply helps you move with intention."
                 )}
               </p>
               <p className="opacity-100 font-medium">
@@ -279,12 +285,12 @@ const Home = () => {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              {t('Bleib nah dran.', 'Stay close.')}
+              {t('Bleib nah dran.', "If you're ready to build something that fits you —")}
             </h2>
             <p className="text-lg text-muted-foreground">
               {t(
                 'Einladungen. Impulse. Neue Formate. Direkt in dein Postfach.',
-                'Invitations. Insights. New formats. Straight to your inbox.'
+                'Step in.'
               )}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
