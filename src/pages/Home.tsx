@@ -197,11 +197,8 @@ const Home = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
-              {t('Starte bei dir.', 'Start with you.')}
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              {t('Hier beginnt es.', 'This is where it starts.')}
+            <h2 className="font-heading text-4xl md:text-5xl font-extrabold text-foreground">
+              {t('Dein nächster Schritt', 'Choose Your Move.')}
             </h2>
           </motion.div>
 
