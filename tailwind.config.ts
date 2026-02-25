@@ -56,6 +56,7 @@ export default {
         "accent-glow": "hsl(var(--accent-glow))",
         "accent-electric": "hsl(var(--accent-electric))",
         "accent-magenta": "hsl(var(--accent-magenta))",
+        "accent-lime": "hsl(var(--accent-lime))",
         "text-hero": "hsl(var(--text-hero))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
