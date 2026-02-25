@@ -43,7 +43,7 @@ const Home = () => {
             <p className="text-lg md:text-xl text-text-hero/70 max-w-xl leading-relaxed mb-10">
               {t(
                 'Die Zukunft ist nicht linear. Orientierung beginnt bei dir.',
-                "The future isn't linear. Orientation starts with you."
+                "The future isn't linear. Make it yours."
               )}
             </p>
             <div className="flex flex-wrap gap-4">
