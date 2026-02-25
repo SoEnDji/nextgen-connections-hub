@@ -185,7 +185,7 @@ const Home = () => {
                   "Not as candidates. Not as test subjects. But as collaborators."
                 )}
               </p>
-              <p className="text-lg font-heading font-semibold">
+              <p className="text-lg font-heading font-semibold bg-gradient-to-r from-accent-glow via-accent-electric to-accent bg-clip-text text-transparent">
                 {t('Mit Mut. Mit Weitblick. Mit Menschen, die an dich glauben.', "Because leadership doesn't start later. It starts when you decide to take yourself seriously.")}
               </p>
             </motion.div>
