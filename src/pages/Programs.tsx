@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
-import heroImg2 from '@/assets/hero-2.jpg';
-import workshopImg from '@/assets/workshop.jpg';
+import editorialWorkshop from '@/assets/editorial-workshop.jpg';
+import detailCourt from '@/assets/detail-court.jpg';
+import detailWalking from '@/assets/detail-walking.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -18,37 +19,45 @@ const Programs = () => {
 
   return (
     <Layout>
-      {/* HERO */}
+      {/* HERO — tighter with image cluster */}
       <section className="hero-gradient noise-overlay relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={heroImg2} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
-        </div>
         <div className="absolute top-1/3 -right-20 w-72 h-72 bg-accent/20 rounded-full blur-[100px]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
-              {t('Programme', 'Programs')}
-            </h1>
-            <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
-              {t(
-                'Orientierung ist kein Ziel. Es ist ein Prozess. Unsere Programme begleiten dich dabei.',
-                "Orientation isn't a destination. It's a process. Our programs walk with you."
-              )}
-            </p>
-          </motion.div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 md:py-36">
+          <div className="grid lg:grid-cols-5 gap-10 items-end">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-3 space-y-6"
+            >
+              <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
+                {t('Programme', 'Programs')}
+              </h1>
+              <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
+                {t(
+                  'Orientierung ist kein Ziel. Es ist ein Prozess. Unsere Programme begleiten dich dabei.',
+                  "Orientation isn't a destination. It's a process. Our programs walk with you."
+                )}
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:col-span-2 hidden lg:grid grid-cols-2 gap-3"
+            >
+              <img src={detailCourt} alt="" className="rounded-xl object-cover w-full aspect-[3/4] opacity-50 grayscale-[50%]" />
+              <img src={detailWalking} alt="" className="rounded-xl object-cover w-full aspect-[3/4] mt-8 opacity-50 grayscale-[50%]" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* EARLY COHORT */}
-      <section className="py-20 md:py-28 bg-background">
+      {/* EARLY COHORT — split layout */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div {...fadeUp} className="space-y-6">
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-3 space-y-6">
               <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full font-heading font-semibold text-sm border border-accent/20">
                 {t('Jetzt bewerben', 'Apply now')}
               </div>
@@ -73,16 +82,16 @@ const Programs = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
-            <motion.div {...fadeUp} className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent-electric/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+            <motion.div {...fadeUp} className="lg:col-span-2 relative group">
+              <div className="absolute -inset-3 bg-gradient-to-br from-accent/15 to-accent-electric/10 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img src={editorialWorkshop} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-lg w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.01]" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* WHAT YOU GET */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
+      <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
