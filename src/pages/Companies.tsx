@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Target, Users, Lightbulb, Handshake, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
-import companiesImg from '@/assets/companies.jpg';
+import companiesImg from '@/assets/editorial-companies.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -60,44 +60,51 @@ const Companies = () => {
 
   return (
     <Layout>
-      {/* HERO */}
+      {/* HERO — split with inline image */}
       <section className="hero-gradient noise-overlay relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={companiesImg} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
-        </div>
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-accent-magenta/15 rounded-full blur-[120px]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
-              {t(
-                'Die Zukunft Ihrer Organisation entscheidet sich im Umgang mit Veränderung.',
-                'The future of your organization depends on how you navigate change.'
-              )}
-            </h1>
-            <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
-              {t(
-                'In einer nichtlinearen Welt braucht Führung neue Perspektiven und echten Dialog.',
-                'In a nonlinear world, leadership needs fresh perspectives and authentic dialogue.'
-              )}
-            </p>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 md:py-36">
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-3 space-y-6"
             >
-              {t('Gespräch vereinbaren', 'Schedule a Conversation')}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
+              <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
+                {t(
+                  'Die Zukunft Ihrer Organisation entscheidet sich im Umgang mit Veränderung.',
+                  'The future of your organization depends on how you navigate change.'
+                )}
+              </h1>
+              <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
+                {t(
+                  'In einer nichtlinearen Welt braucht Führung neue Perspektiven und echten Dialog.',
+                  'In a nonlinear world, leadership needs fresh perspectives and authentic dialogue.'
+                )}
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
+              >
+                {t('Gespräch vereinbaren', 'Schedule a Conversation')}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:col-span-2 hidden lg:block"
+            >
+              <img src={companiesImg} alt="" className="rounded-2xl object-cover w-full aspect-[4/3] opacity-50 grayscale-[40%]" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* REALITAET */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight text-balance">
@@ -125,7 +132,7 @@ const Companies = () => {
       </section>
 
       {/* UNSER ANSATZ */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
+      <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unser Ansatz', 'Our Approach')}</h2>
@@ -167,16 +174,16 @@ const Companies = () => {
       </section>
 
       {/* WAS UNTERNEHMEN GEWINNEN */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeUp}>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-10">
               {t('Was Unternehmen gewinnen', 'What Companies Gain')}
             </h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {benefits.map((b, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ duration: 0.6, delay: i * 0.1 }} className="p-7 rounded-2xl bg-card border border-border card-hover">
+              <motion.div key={i} {...fadeUp} transition={{ duration: 0.6, delay: i * 0.1 }} className="p-6 rounded-2xl bg-card border border-border card-hover">
                 <b.icon className="w-7 h-7 text-accent mb-4" />
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3">{b.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{b.desc}</p>
@@ -187,7 +194,7 @@ const Companies = () => {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient noise-overlay py-20 md:py-28">
+      <section className="hero-gradient noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-hero glow-text">

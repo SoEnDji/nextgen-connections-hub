@@ -1,10 +1,11 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
-import workshopImg from '@/assets/workshop.jpg';
-import aboutImg from '@/assets/about.jpg';
+import editorialWorkshop from '@/assets/editorial-workshop.jpg';
+import aboutImg from '@/assets/editorial-collab.jpg';
 import founderSohrabImg from '@/assets/founder-vera.jpg';
 import founderVeraImg from '@/assets/founder-sohrab.jpg';
+import detailNotebook from '@/assets/detail-notebook.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -18,26 +19,39 @@ const About = () => {
 
   return (
     <Layout>
-      {/* HERO */}
+      {/* HERO — tighter, no full-bleed image */}
       <section className="hero-gradient noise-overlay relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={aboutImg} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
-        </div>
         <div className="absolute top-1/3 right-0 w-80 h-80 bg-accent/20 rounded-full blur-[100px]" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text"
-          >
-            {t('Warum es 2Morrow Lab gibt', 'Why 2Morrow Lab exists')}
-          </motion.h1>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 md:py-36">
+          <div className="grid lg:grid-cols-5 gap-10 items-end">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-3"
+            >
+              <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
+                {t('Warum es 2Morrow Lab gibt', 'Why 2Morrow Lab exists')}
+              </h1>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:col-span-2 hidden lg:block"
+            >
+              <img
+                src={aboutImg}
+                alt=""
+                className="rounded-2xl object-cover w-full aspect-[4/3] opacity-60 grayscale-[40%]"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* WARUM */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>{t(
@@ -60,15 +74,17 @@ const About = () => {
         </div>
       </section>
 
-      {/* UNSERE ERFAHRUNG */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
+      {/* UNSERE ERFAHRUNG — split layout with smaller image */}
+      <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div {...fadeUp} className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent-electric/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-2 relative group">
+              <div className="grid grid-cols-2 gap-3">
+                <img src={editorialWorkshop} alt={t('Workshop', 'Workshop')} className="rounded-xl w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                <img src={detailNotebook} alt="" className="rounded-xl w-full aspect-[3/4] object-cover mt-6 grayscale hover:grayscale-0 transition-all duration-500" />
+              </div>
             </motion.div>
-            <motion.div {...fadeUp} className="space-y-6">
+            <motion.div {...fadeUp} className="lg:col-span-3 space-y-6">
               <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unsere Erfahrung', 'Our Experience')}</h2>
               <div className="space-y-4 text-lg opacity-70 leading-relaxed">
                 <p>{t(
@@ -94,16 +110,16 @@ const About = () => {
       </section>
 
       {/* FOUNDERS */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.h2 {...fadeUp} className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-14">
+          <motion.h2 {...fadeUp} className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
             {t('Die Menschen hinter 2Morrow Lab', 'The People Behind 2Morrow Lab')}
           </motion.h2>
-          <div className="grid lg:grid-cols-2 gap-14">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* Sohrab */}
             <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0">
-                <img src={founderSohrabImg} alt="Dr. Sohrab Noorsalehi-Garakani" className="rounded-2xl aspect-square object-cover w-full md:w-48 shadow-xl" />
+                <img src={founderSohrabImg} alt="Dr. Sohrab Noorsalehi-Garakani" className="rounded-2xl aspect-square object-cover w-full md:w-44 shadow-lg" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading text-xl font-bold text-foreground">Dr. Sohrab Noorsalehi-Garakani</h3>
@@ -130,7 +146,7 @@ const About = () => {
             {/* Vera */}
             <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0">
-                <img src={founderVeraImg} alt="Vera Plümer" className="rounded-2xl aspect-square object-cover w-full md:w-48 shadow-xl" />
+                <img src={founderVeraImg} alt="Vera Plümer" className="rounded-2xl aspect-square object-cover w-full md:w-44 shadow-lg" />
               </div>
               <div className="space-y-4">
                 <h3 className="font-heading text-xl font-bold text-foreground">Vera Plümer</h3>
@@ -155,7 +171,7 @@ const About = () => {
       </section>
 
       {/* WORAUF WIR AUFBAUEN */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">{t('Worauf wir aufbauen', 'What we build on')}</h2>
@@ -178,8 +194,8 @@ const About = () => {
               )}</p>
             </div>
 
-            <div className="pt-8">
-              <p className="font-heading font-semibold text-foreground mb-6">{t('Unsere Arbeit verbindet:', 'Our work connects:')}</p>
+            <div className="pt-6">
+              <p className="font-heading font-semibold text-foreground mb-5">{t('Unsere Arbeit verbindet:', 'Our work connects:')}</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   'Life Design Thinking',
@@ -200,8 +216,8 @@ const About = () => {
             </p>
 
             {/* Partner logos placeholder */}
-            <div className="pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider font-heading">{t('Partner', 'Partners')}</p>
+            <div className="pt-6 border-t border-border">
+              <p className="text-sm text-muted-foreground mb-5 uppercase tracking-wider font-heading">{t('Partner', 'Partners')}</p>
               <div className="flex flex-wrap gap-6 items-center">
                 <div className="px-5 py-2.5 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground card-hover">Sportschule Potsdam</div>
                 <div className="px-5 py-2.5 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground card-hover">UWC Mostar</div>

@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Users, School, Building2 } from 'lucide-react';
 import Layout from '@/components/Layout';
-import heroImg1 from '@/assets/hero-1.jpg';
-import collabImg from '@/assets/collaboration.jpg';
+import heroImg from '@/assets/editorial-hero.jpg';
+import collabImg from '@/assets/editorial-collab.jpg';
+import detailNotebook from '@/assets/detail-notebook.jpg';
+import detailCourt from '@/assets/detail-court.jpg';
+import teamworkImg from '@/assets/editorial-teamwork.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -21,9 +24,8 @@ const Home = () => {
       {/* HERO */}
       <section className="hero-gradient noise-overlay relative overflow-hidden min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg1} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
+          <img src={heroImg} alt="" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" />
         </div>
-        {/* Gradient orbs */}
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-accent/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-accent-electric/15 rounded-full blur-[100px]" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
@@ -68,44 +70,59 @@ const Home = () => {
         </div>
       </section>
 
-      {/* REALITAETSBLOCK */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <motion.div {...fadeUp} className="space-y-6">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
-              {t(
-                'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
-                'There was a time when choosing once meant choosing for life.'
-              )}
-            </h2>
-            <div className="space-y-4 text-lg leading-relaxed max-w-2xl opacity-70">
-              <p>
+      {/* THE SHIFT — with image mosaic */}
+      <section className="section-dark noise-overlay py-16 md:py-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-3 space-y-6">
+              <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
                 {t(
-                  'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
-                  "That time has passed. Today, paths shift. Industries evolve. New ideas appear overnight."
+                  'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
+                  'There was a time when choosing once meant choosing for life.'
                 )}
-              </p>
-              <p>
-                {t(
-                  'Nur gibt es heute nicht mehr den einen klaren Weg, auf den man sich verlassen kann.',
-                  "That's not chaos. It's possibility."
-                )}
-              </p>
-              <p className="font-heading font-semibold opacity-100">
-                {t(
-                  '',
-                  'And possibility asks one thing: Who are you? And what will you build with it?'
-                )}
-              </p>
-            </div>
-          </motion.div>
+              </h2>
+              <div className="space-y-4 text-lg leading-relaxed max-w-2xl opacity-70">
+                <p>
+                  {t(
+                    'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
+                    "That time has passed. Today, paths shift. Industries evolve. New ideas appear overnight."
+                  )}
+                </p>
+                <p>
+                  {t(
+                    'Nur gibt es heute nicht mehr den einen klaren Weg, auf den man sich verlassen kann.',
+                    "That's not chaos. It's possibility."
+                  )}
+                </p>
+                <p className="font-heading font-semibold opacity-100">
+                  {t(
+                    '',
+                    'And possibility asks one thing: Who are you? And what will you build with it?'
+                  )}
+                </p>
+              </div>
+            </motion.div>
+            {/* Image cluster */}
+            <motion.div {...fadeUp} className="lg:col-span-2 grid grid-cols-2 gap-3">
+              <img
+                src={detailNotebook}
+                alt=""
+                className="rounded-xl object-cover w-full aspect-[3/4] grayscale hover:grayscale-0 transition-all duration-500"
+              />
+              <img
+                src={detailCourt}
+                alt=""
+                className="rounded-xl object-cover w-full aspect-[3/4] mt-8 grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* PLATTFORM-BLOCK */}
-      <section className="py-20 md:py-28 bg-background">
+      {/* EMPOWERMENT — split layout with inline image */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <motion.div {...fadeUp} className="space-y-6">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
                 {t(
@@ -130,44 +147,56 @@ const Home = () => {
               {...fadeUp}
               className="relative group"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-accent-electric/10 to-accent-magenta/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -inset-3 bg-gradient-to-br from-accent/20 via-transparent to-accent-electric/10 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 src={collabImg}
                 alt={t('Junge Menschen arbeiten zusammen', 'Young people collaborating')}
-                className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                className="relative rounded-2xl shadow-lg w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.01]"
               />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* HALTUNGSBLOCK */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <motion.div {...fadeUp} className="space-y-8">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance glow-text">
-              {t(
-                'Die Zukunft gehört denen, die ihren eigenen Weg finden.',
-                'We connect young people, schools, and companies to create real development partnerships.'
-              )}
-            </h2>
-            <p className="text-lg opacity-60 leading-relaxed max-w-2xl mx-auto">
-              {t(
-                'Wenn sich die Spielregeln ändern, bleibst du nicht stehen. Du gehst weiter.',
-                "Not as candidates. Not as test subjects. But as collaborators."
-              )}
-            </p>
-            <p className="text-lg font-heading font-semibold">
-              {t('Mit Mut. Mit Weitblick. Mit Menschen, die an dich glauben.', "Because leadership doesn't start later. It starts when you decide to take yourself seriously.")}
-            </p>
-          </motion.div>
+      {/* PLATFORM — with layered image */}
+      <section className="section-dark noise-overlay py-16 md:py-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-5 gap-10 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-2 relative">
+              <div className="relative">
+                <img
+                  src={teamworkImg}
+                  alt=""
+                  className="rounded-2xl object-cover w-full aspect-square grayscale-[30%]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--section-dark))] via-transparent to-transparent rounded-2xl" />
+              </div>
+            </motion.div>
+            <motion.div {...fadeUp} className="lg:col-span-3 space-y-8 text-center lg:text-left">
+              <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance glow-text">
+                {t(
+                  'Die Zukunft gehört denen, die ihren eigenen Weg finden.',
+                  'We connect young people, schools, and companies to create real development partnerships.'
+                )}
+              </h2>
+              <p className="text-lg opacity-60 leading-relaxed max-w-2xl">
+                {t(
+                  'Wenn sich die Spielregeln ändern, bleibst du nicht stehen. Du gehst weiter.',
+                  "Not as candidates. Not as test subjects. But as collaborators."
+                )}
+              </p>
+              <p className="text-lg font-heading font-semibold">
+                {t('Mit Mut. Mit Weitblick. Mit Menschen, die an dich glauben.', "Because leadership doesn't start later. It starts when you decide to take yourself seriously.")}
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* ROLLENBLOCK */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.div {...fadeUp} className="text-center mb-12">
+          <motion.div {...fadeUp} className="text-center mb-10">
             <p className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
               {t('Starte bei dir.', 'Start with you.')}
             </p>
@@ -244,7 +273,7 @@ const Home = () => {
       </section>
 
       {/* KI SECTION */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
+      <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <div className="inline-flex items-center gap-2 bg-accent/15 text-accent-glow px-4 py-2 rounded-full font-heading font-semibold text-sm border border-accent/20">
@@ -279,7 +308,7 @@ const Home = () => {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
