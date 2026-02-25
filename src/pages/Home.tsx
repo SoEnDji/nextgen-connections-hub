@@ -73,8 +73,8 @@ const Home = () => {
       {/* THE SHIFT — with image mosaic */}
       <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-5 gap-10 items-center">
-            <motion.div {...fadeUp} className="lg:col-span-3 space-y-6">
+          <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-2 space-y-6">
               <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
                 {t(
                   'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
@@ -102,15 +102,13 @@ const Home = () => {
                 </p>
               </div>
             </motion.div>
-            {/* Image cluster */}
-            <motion.div {...fadeUp} className="lg:col-span-2 relative group">
-              <div className="absolute -inset-2 bg-gradient-to-br from-accent/15 to-accent-electric/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <motion.div {...fadeUp} className="lg:col-span-1 relative group">
               <img
                 src={detailNotebook}
                 alt=""
-                className="relative rounded-2xl object-cover w-full aspect-[3/4] shadow-lg transition-transform duration-500 group-hover:scale-[1.01]"
+                className="relative rounded-xl object-cover w-full aspect-square shadow-lg"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--section-dark))] via-transparent to-transparent rounded-2xl opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--section-dark))] via-transparent to-transparent rounded-xl opacity-50" />
             </motion.div>
           </div>
         </div>
