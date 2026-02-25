@@ -19,17 +19,17 @@ const About = () => {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="hero-gradient noise-overlay relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={aboutImg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <img src={aboutImg} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
         </div>
-        <div className="relative max-w-4xl mx-auto px-6 py-32 md:py-40">
+        <div className="absolute top-1/3 right-0 w-80 h-80 bg-accent/20 rounded-full blur-[100px]" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance"
+            className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text"
           >
             {t('Warum es 2Morrow Lab gibt', 'Why 2Morrow Lab exists')}
           </motion.h1>
@@ -37,7 +37,7 @@ const About = () => {
       </section>
 
       {/* WARUM */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>{t(
@@ -61,9 +61,9 @@ const About = () => {
       </section>
 
       {/* TRANSITION BRIDGE */}
-      <section className="py-16 md:py-20 section-alt">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.p {...fadeUp} className="text-xl md:text-2xl text-foreground font-heading font-medium leading-relaxed">
+      <section className="section-dark noise-overlay py-14 md:py-18">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <motion.p {...fadeUp} className="text-xl md:text-2xl font-heading font-medium leading-relaxed opacity-80">
             {t(
               'Diese Haltung prägt nicht nur unsere Arbeit. Sie prägt auch uns.',
               "This mindset doesn't just shape our work. It shapes us."
@@ -73,52 +73,60 @@ const About = () => {
       </section>
 
       {/* FOUNDERS */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.h2 {...fadeUp} className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-16">
+          <motion.h2 {...fadeUp} className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-14">
             {t('Die Menschen hinter 2Morrow Lab', 'The People Behind 2Morrow Lab')}
           </motion.h2>
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-14">
             {/* Sohrab */}
-            <motion.div {...fadeUp} className="space-y-6">
-              <img src={founderSohrabImg} alt="Dr. Sohrab Noorsalehi-Garakani" className="rounded-2xl aspect-square object-cover w-full max-w-sm mx-auto shadow-xl" />
-              <h3 className="font-heading text-2xl font-bold text-foreground">Dr. Sohrab Noorsalehi-Garakani</h3>
-              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                <p>{t(
-                  'Dr. Sohrab Noorsalehi-Garakani arbeitet als Leadership Coach und Trainer. Er begleitet Führungskräfte und Teams dabei, in komplexen Situationen Orientierung zu gewinnen und handlungsfähig zu bleiben.',
-                  'Dr. Sohrab Noorsalehi-Garakani works as a leadership coach and trainer. He supports leaders and teams in staying oriented and effective in complex, fast-changing environments.'
-                )}</p>
-                <p>{t(
-                  'Im Zentrum seiner Arbeit stehen Selbstführung, Teamdynamik und die Frage, wie Verantwortung in Zeiten von Unsicherheit bewusst übernommen werden kann.',
-                  'His work focuses on self-leadership, team dynamics, and how responsibility can be consciously embraced in times of uncertainty.'
-                )}</p>
-                <p>{t(
-                  'Basketball ist für ihn mehr als ein Sport. Er glaubt, dass man über Teamgeist, Verantwortung und das Wiederaufstehen nach Rückschlägen viel über Führung lernen kann.',
-                  'For him, basketball represents more than a sport. It reflects teamwork, decision-making under pressure, and the ability to get back up after setbacks.'
-                )}</p>
-                <p className="text-foreground font-medium">{t(
-                  'Er ist überzeugt: Resilienz entsteht nicht durch Druck, sondern durch Beziehung, Klarheit und Verantwortung.',
-                  'His core belief: resilience grows from clarity, relationships, and responsibility.'
-                )}</p>
+            <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-6">
+              <div className="flex-shrink-0">
+                <img src={founderSohrabImg} alt="Dr. Sohrab Noorsalehi-Garakani" className="rounded-2xl aspect-square object-cover w-full md:w-48 shadow-xl" />
+              </div>
+              <div className="space-y-4">
+                <h3 className="font-heading text-xl font-bold text-foreground">Dr. Sohrab Noorsalehi-Garakani</h3>
+                <div className="space-y-3 text-muted-foreground leading-relaxed text-sm">
+                  <p>{t(
+                    'Dr. Sohrab Noorsalehi-Garakani arbeitet als Leadership Coach und Trainer. Er begleitet Führungskräfte und Teams dabei, in komplexen Situationen Orientierung zu gewinnen und handlungsfähig zu bleiben.',
+                    'Dr. Sohrab Noorsalehi-Garakani works as a leadership coach and trainer. He supports leaders and teams in staying oriented and effective in complex, fast-changing environments.'
+                  )}</p>
+                  <p>{t(
+                    'Im Zentrum seiner Arbeit stehen Selbstführung, Teamdynamik und die Frage, wie Verantwortung in Zeiten von Unsicherheit bewusst übernommen werden kann.',
+                    'His work focuses on self-leadership, team dynamics, and how responsibility can be consciously embraced in times of uncertainty.'
+                  )}</p>
+                  <p>{t(
+                    'Basketball ist für ihn mehr als ein Sport. Er glaubt, dass man über Teamgeist, Verantwortung und das Wiederaufstehen nach Rückschlägen viel über Führung lernen kann.',
+                    'For him, basketball represents more than a sport. It reflects teamwork, decision-making under pressure, and the ability to get back up after setbacks.'
+                  )}</p>
+                  <p className="text-foreground font-medium">{t(
+                    'Er ist überzeugt: Resilienz entsteht nicht durch Druck, sondern durch Beziehung, Klarheit und Verantwortung.',
+                    'His core belief: resilience grows from clarity, relationships, and responsibility.'
+                  )}</p>
+                </div>
               </div>
             </motion.div>
             {/* Vera */}
-            <motion.div {...fadeUp} className="space-y-6">
-              <img src={founderVeraImg} alt="Vera Plümer" className="rounded-2xl aspect-square object-cover w-full max-w-sm mx-auto shadow-xl" />
-              <h3 className="font-heading text-2xl font-bold text-foreground">Vera Plümer</h3>
-              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-                <p>{t(
-                  'Vera arbeitet als Coach und Dozentin mit Studierenden. Sie begleitet junge Menschen dabei, nicht nur einen Beruf zu wählen, sondern ihren eigenen Weg zu entwickeln.',
-                  'Vera works as a coach and lecturer with university students. She supports young people in shaping not just a career, but a direction that genuinely fits who they are.'
-                )}</p>
-                <p>{t(
-                  'In ihrer Arbeit nutzt sie unter anderem das Life Design Framework. Es geht um Selbstkenntnis, Experimente und bewusste Entscheidungen – nicht um schnelle Antworten oder vorgefertigte Lösungen.',
-                  "Her work draws on the Life Design framework. It's about self-awareness, experimentation, and making thoughtful decisions — not chasing quick answers."
-                )}</p>
-                <p className="text-foreground font-medium">{t(
-                  'Sie glaubt daran, dass Klarheit und Handlungsfähigkeit entstehen, wenn junge Menschen sich selbst ernst nehmen, ausprobieren und Verantwortung für ihren Weg übernehmen.',
-                  'She believes clarity and agency grow when young people take themselves seriously, explore, and step into responsibility for their own path.'
-                )}</p>
+            <motion.div {...fadeUp} className="flex flex-col md:flex-row gap-6">
+              <div className="flex-shrink-0">
+                <img src={founderVeraImg} alt="Vera Plümer" className="rounded-2xl aspect-square object-cover w-full md:w-48 shadow-xl" />
+              </div>
+              <div className="space-y-4">
+                <h3 className="font-heading text-xl font-bold text-foreground">Vera Plümer</h3>
+                <div className="space-y-3 text-muted-foreground leading-relaxed text-sm">
+                  <p>{t(
+                    'Vera arbeitet als Coach und Dozentin mit Studierenden. Sie begleitet junge Menschen dabei, nicht nur einen Beruf zu wählen, sondern ihren eigenen Weg zu entwickeln.',
+                    'Vera works as a coach and lecturer with university students. She supports young people in shaping not just a career, but a direction that genuinely fits who they are.'
+                  )}</p>
+                  <p>{t(
+                    'In ihrer Arbeit nutzt sie unter anderem das Life Design Framework. Es geht um Selbstkenntnis, Experimente und bewusste Entscheidungen – nicht um schnelle Antworten oder vorgefertigte Lösungen.',
+                    "Her work draws on the Life Design framework. It's about self-awareness, experimentation, and making thoughtful decisions — not chasing quick answers."
+                  )}</p>
+                  <p className="text-foreground font-medium">{t(
+                    'Sie glaubt daran, dass Klarheit und Handlungsfähigkeit entstehen, wenn junge Menschen sich selbst ernst nehmen, ausprobieren und Verantwortung für ihren Weg übernehmen.',
+                    'She believes clarity and agency grow when young people take themselves seriously, explore, and step into responsibility for their own path.'
+                  )}</p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -126,28 +134,29 @@ const About = () => {
       </section>
 
       {/* UNSERE ERFAHRUNG */}
-      <section className="section-alt py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div {...fadeUp}>
-              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" />
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div {...fadeUp} className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent-electric/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
             </motion.div>
             <motion.div {...fadeUp} className="space-y-6">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">{t('Unsere Erfahrung', 'Our Experience')}</h2>
-              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unsere Erfahrung', 'Our Experience')}</h2>
+              <div className="space-y-4 text-lg opacity-70 leading-relaxed">
                 <p>{t(
                   'Schule kennen wir nicht nur aus Konzeptpapieren.',
                   "We don't know school from concept papers alone."
                 )}</p>
                 <p>{t(
                   'Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen tätig – in einem Umfeld mit hohen sozialen und strukturellen Anforderungen.',
-                  "As Teach First Deutschland fellows, we spent two years at high-challenge schools \u2014 in environments with intense social and structural demands."
+                  "As Teach First Deutschland fellows, we spent two years at high-challenge schools — in environments with intense social and structural demands."
                 )}</p>
                 <p>{t(
                   'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Fragen von Selbstführung, Leadership und Zukunftsgestaltung.',
                   'Today, we work with young people, schools, and organizations on questions of self-leadership, leadership development, and shaping the future.'
                 )}</p>
-                <p className="text-foreground font-medium">{t(
+                <p className="opacity-100 font-medium">{t(
                   '2Morrow Lab verbindet beide Welten.',
                   '2Morrow Lab connects both worlds.'
                 )}</p>
@@ -158,7 +167,7 @@ const About = () => {
       </section>
 
       {/* WORAUF WIR AUFBAUEN */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">{t('Worauf wir aufbauen', 'What we build on')}</h2>
@@ -173,11 +182,11 @@ const About = () => {
               )}</p>
               <p>{t(
                 'Mit der Sportschule Potsdam entwickeln wir Schule als Ökosystem weiter – mit jungen Leistungssportlerinnen und -sportlern.',
-                "Together with Sportschule Potsdam, we are evolving school as an ecosystem \u2014 with young competitive athletes."
+                "Together with Sportschule Potsdam, we are evolving school as an ecosystem — with young competitive athletes."
               )}</p>
               <p>{t(
                 'Gemeinsam mit dem United World College Mostar entwickeln wir Formate für innovatives Alumni-Engagement – geführt von aktuellen Schülerinnen und Schülern aus aller Welt.',
-                "With United World College Mostar, we are developing formats for innovative alumni engagement \u2014 led by current students from around the world."
+                "With United World College Mostar, we are developing formats for innovative alumni engagement — led by current students from around the world."
               )}</p>
             </div>
 
@@ -190,7 +199,7 @@ const About = () => {
                   t('Entwicklungspartnerschaften', 'Development Partnerships'),
                   t('Schule als Ökosystem', 'School as Ecosystem'),
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-secondary">
+                  <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border card-hover">
                     <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
                     <span className="font-heading font-semibold text-foreground">{item}</span>
                   </div>
@@ -205,9 +214,9 @@ const About = () => {
             {/* Partner logos placeholder */}
             <div className="pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider font-heading">{t('Partner', 'Partners')}</p>
-              <div className="flex flex-wrap gap-8 items-center">
-                <div className="px-6 py-3 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground">Sportschule Potsdam</div>
-                <div className="px-6 py-3 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground">UWC Mostar</div>
+              <div className="flex flex-wrap gap-6 items-center">
+                <div className="px-5 py-2.5 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground card-hover">Sportschule Potsdam</div>
+                <div className="px-5 py-2.5 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground card-hover">UWC Mostar</div>
               </div>
             </div>
           </motion.div>

@@ -19,44 +19,47 @@ const Home = () => {
   return (
     <Layout>
       {/* HERO */}
-      <section className="hero-gradient relative overflow-hidden min-h-[90vh] flex items-center">
+      <section className="hero-gradient noise-overlay relative overflow-hidden min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={heroImg1} alt="" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" />
+          <img src={heroImg1} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+        {/* Gradient orbs */}
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-accent/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-accent-electric/15 rounded-full blur-[100px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl"
           >
-            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-text-hero leading-[1.1] mb-6 text-balance">
+            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-text-hero leading-[1.1] mb-6 text-balance glow-text">
               {t(
                 'Du bist nicht hier, um zu funktionieren.',
                 "You're not here to fit in."
               )}
               <br />
-              <span className="text-accent-glow">
+              <span className="bg-gradient-to-r from-accent-glow via-accent-electric to-accent bg-clip-text text-transparent">
                 {t('Du bist hier, um zu gestalten.', "You're here to shape what's next.")}
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-text-hero/70 max-w-xl leading-relaxed mb-10">
+            <p className="text-lg md:text-xl text-text-hero/60 max-w-xl leading-relaxed mb-10">
               {t(
                 'Die Zukunft ist nicht linear. Orientierung beginnt bei dir.',
-                "The future isn't linear. Make it yours."
+                "The future isn't linear.\nMake it yours."
               )}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/programs"
-                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-colors"
+                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
               >
                 {t('Zur Early Cohort', 'Join the Early Cohort')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 border border-text-hero/30 text-text-hero px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:border-text-hero/60 transition-colors"
+                className="inline-flex items-center gap-2 border border-text-hero/20 text-text-hero px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:border-accent/50 hover:bg-accent/10 transition-all duration-300"
               >
                 {t('Gespräch starten', 'Start a conversation')}
               </Link>
@@ -66,20 +69,20 @@ const Home = () => {
       </section>
 
       {/* REALITAETSBLOCK */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground leading-tight text-balance">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
               {t(
                 'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
                 'The world is moving fast. The options are endless. The expectations are high.'
               )}
             </h2>
-            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+            <div className="space-y-4 text-lg leading-relaxed max-w-2xl opacity-70">
               <p>
                 {t(
                   'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
-                  "Young people are expected to commit early \u2014 in a system built for straight-line careers."
+                  "Young people are expected to commit early — in a system built for straight-line careers."
                 )}
               </p>
               <p>
@@ -94,9 +97,9 @@ const Home = () => {
       </section>
 
       {/* PLATTFORM-BLOCK */}
-      <section className="section-alt py-24 md:py-32">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div {...fadeUp} className="space-y-6">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
                 {t(
@@ -113,15 +116,19 @@ const Home = () => {
               <p className="text-lg text-foreground/80 leading-relaxed">
                 {t(
                   'So wird dein Weg etwas, das du bewusst gestaltest, nicht etwas, das dem Zufall überlassen bleibt.',
-                  "So your path becomes something you shape intentionally \u2014 not something left to chance."
+                  "So your path becomes something you shape intentionally — not something left to chance."
                 )}
               </p>
             </motion.div>
-            <motion.div {...fadeUp} className="relative">
+            <motion.div
+              {...fadeUp}
+              className="relative group"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-accent-electric/10 to-accent-magenta/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 src={collabImg}
                 alt={t('Junge Menschen arbeiten zusammen', 'Young people collaborating')}
-                className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover"
+                className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               />
             </motion.div>
           </div>
@@ -129,24 +136,24 @@ const Home = () => {
       </section>
 
       {/* HALTUNGSBLOCK */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-8">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground leading-tight text-balance">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance glow-text">
               {t(
                 'Die Zukunft gehört denen, die ihren eigenen Weg finden.',
                 'The future belongs to those who find their own way.'
               )}
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg opacity-60 leading-relaxed max-w-2xl mx-auto">
               {t(
                 'Wenn sich die Spielregeln ändern, bleibst du nicht stehen. Du gehst weiter.',
                 "When the rules change, you don't stand still. You keep moving."
               )}
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-lg font-heading font-semibold text-foreground">
+            <div className="flex flex-wrap justify-center gap-6 text-lg font-heading font-semibold">
               <span>{t('Mit Mut.', 'With courage.')}</span>
-              <span className="text-accent">{t('Mit Weitblick.', 'With vision.')}</span>
+              <span className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent">{t('Mit Weitblick.', 'With vision.')}</span>
               <span>{t('Mit Menschen, die an dich glauben.', 'With people who believe in you.')}</span>
             </div>
           </motion.div>
@@ -154,10 +161,10 @@ const Home = () => {
       </section>
 
       {/* ROLLENBLOCK */}
-      <section className="section-alt py-24 md:py-32">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.div {...fadeUp} className="text-center mb-16">
-            <p className="text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
+          <motion.div {...fadeUp} className="text-center mb-12">
+            <p className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent font-heading font-semibold text-sm uppercase tracking-wider mb-3">
               {t('Starte bei dir.', 'Start with you.')}
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -165,7 +172,7 @@ const Home = () => {
             </h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
                 icon: Users,
@@ -212,11 +219,11 @@ const Home = () => {
               <motion.div key={i} {...fadeUp} transition={{ duration: 0.6, delay: i * 0.1 }}>
                 <Link
                   to={card.link}
-                  className="group block bg-background rounded-2xl p-8 border border-border hover:border-accent hover:shadow-lg transition-all duration-300 h-full"
+                  className="group block bg-card rounded-2xl p-7 border border-border hover:border-accent/40 card-hover h-full"
                 >
-                  <card.icon className="w-8 h-8 text-accent mb-5" />
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">{card.title}</h3>
-                  <div className="space-y-2 mb-6">
+                  <card.icon className="w-7 h-7 text-accent mb-4" />
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-3">{card.title}</h3>
+                  <div className="space-y-2 mb-5">
                     {card.lines.map((line, j) => (
                       <p key={j} className="text-sm text-muted-foreground leading-relaxed">{line}</p>
                     ))}
@@ -233,17 +240,17 @@ const Home = () => {
       </section>
 
       {/* KI SECTION */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full font-heading font-semibold text-sm">
+            <div className="inline-flex items-center gap-2 bg-accent/15 text-accent-glow px-4 py-2 rounded-full font-heading font-semibold text-sm border border-accent/20">
               <Sparkles className="w-4 h-4" />
               {t('Dein KI-Co-Pilot', 'Your AI Co-Pilot')}
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight glow-text">
               {t('Du gestaltest dein Leben.', 'You design your life.')}
             </h2>
-            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+            <div className="space-y-4 text-lg opacity-70 leading-relaxed max-w-2xl">
               <p>
                 {t(
                   'Dein KI-Co-Pilot hilft dir, klarer zu denken, Zusammenhänge zu erkennen und Ideen in konkrete Schritte zu bringen.',
@@ -256,7 +263,7 @@ const Home = () => {
                   "Not to decide for you. But to expand what's possible."
                 )}
               </p>
-              <p className="text-foreground font-medium">
+              <p className="opacity-100 font-medium">
                 {t(
                   'In jede 2Morrow Lab Erfahrung integriert.',
                   'Built into every 2Morrow Lab experience.'
@@ -268,7 +275,7 @@ const Home = () => {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="section-alt py-24 md:py-32">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
@@ -284,9 +291,9 @@ const Home = () => {
               <input
                 type="email"
                 placeholder={t('Deine E-Mail-Adresse', 'Your email address')}
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+                className="flex-1 px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
               />
-              <button className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-colors whitespace-nowrap">
+              <button className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent whitespace-nowrap">
                 {t('Newsletter abonnieren', 'Subscribe')}
               </button>
             </div>

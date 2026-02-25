@@ -20,7 +20,7 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="font-heading text-xl font-bold tracking-tight text-foreground">
@@ -42,7 +42,7 @@ const Header = () => {
           ))}
           <button
             onClick={() => setLang(lang === 'de' ? 'en' : 'de')}
-            className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent transition-colors px-3 py-1.5 rounded-full border border-border hover:border-accent"
+            className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent transition-colors px-3 py-1.5 rounded-full border border-border/50 hover:border-accent/40"
           >
             <Globe className="w-3.5 h-3.5" />
             {lang === 'de' ? 'EN' : 'DE'}
@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex md:hidden items-center gap-3">
           <button
             onClick={() => setLang(lang === 'de' ? 'en' : 'de')}
-            className="flex items-center gap-1 text-sm font-medium text-muted-foreground px-2 py-1 rounded-full border border-border"
+            className="flex items-center gap-1 text-sm font-medium text-muted-foreground px-2 py-1 rounded-full border border-border/50"
           >
             <Globe className="w-3.5 h-3.5" />
             {lang === 'de' ? 'EN' : 'DE'}
@@ -71,7 +71,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-b border-border overflow-hidden"
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border/50 overflow-hidden"
           >
             <nav className="px-6 py-6 flex flex-col gap-4">
               {navItems.map((item) => (
@@ -79,7 +79,7 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setMobileOpen(false)}
-                  className={`text-lg font-medium ${
+                  className={`text-lg font-medium transition-colors ${
                     isActive(item.path) ? 'text-accent' : 'text-foreground'
                   }`}
                 >
