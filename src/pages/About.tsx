@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
 import workshopImg from '@/assets/workshop.jpg';
 import aboutImg from '@/assets/about.jpg';
+import founderSohrabImg from '@/assets/founder-sohrab.jpg';
+import founderVeraImg from '@/assets/founder-vera.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -55,6 +57,71 @@ const About = () => {
               'This conviction is what gave birth to 2Morrow Lab.'
             )}</p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* TRANSITION BRIDGE */}
+      <section className="py-16 md:py-20 section-alt">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <motion.p {...fadeUp} className="text-xl md:text-2xl text-foreground font-heading font-medium leading-relaxed">
+            {t(
+              'Diese Haltung prägt nicht nur unsere Arbeit. Sie prägt auch uns.',
+              "This mindset doesn't just shape our work. It shapes us."
+            )}
+          </motion.p>
+        </div>
+      </section>
+
+      {/* FOUNDERS */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.h2 {...fadeUp} className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-16">
+            {t('Die Menschen hinter 2Morrow Lab', 'The People Behind 2Morrow Lab')}
+          </motion.h2>
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Sohrab */}
+            <motion.div {...fadeUp} className="space-y-6">
+              <img src={founderSohrabImg} alt="Dr. Sohrab Noorsalehi-Garakani" className="rounded-2xl aspect-square object-cover w-full max-w-sm mx-auto shadow-xl" />
+              <h3 className="font-heading text-2xl font-bold text-foreground">Dr. Sohrab Noorsalehi-Garakani</h3>
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                <p>{t(
+                  'Dr. Sohrab Noorsalehi-Garakani arbeitet als Leadership Coach und Trainer. Er begleitet Führungskräfte und Teams dabei, in komplexen Situationen Orientierung zu gewinnen und handlungsfähig zu bleiben.',
+                  'Dr. Sohrab Noorsalehi-Garakani works as a leadership coach and trainer. He supports leaders and teams in staying oriented and effective in complex, fast-changing environments.'
+                )}</p>
+                <p>{t(
+                  'Im Zentrum seiner Arbeit stehen Selbstführung, Teamdynamik und die Frage, wie Verantwortung in Zeiten von Unsicherheit bewusst übernommen werden kann.',
+                  'His work focuses on self-leadership, team dynamics, and how responsibility can be consciously embraced in times of uncertainty.'
+                )}</p>
+                <p>{t(
+                  'Basketball ist für ihn mehr als ein Sport. Er glaubt, dass man über Teamgeist, Verantwortung und das Wiederaufstehen nach Rückschlägen viel über Führung lernen kann.',
+                  'For him, basketball represents more than a sport. It reflects teamwork, decision-making under pressure, and the ability to get back up after setbacks.'
+                )}</p>
+                <p className="text-foreground font-medium">{t(
+                  'Er ist überzeugt: Resilienz entsteht nicht durch Druck, sondern durch Beziehung, Klarheit und Verantwortung.',
+                  'His core belief: resilience grows from clarity, relationships, and responsibility.'
+                )}</p>
+              </div>
+            </motion.div>
+            {/* Vera */}
+            <motion.div {...fadeUp} className="space-y-6">
+              <img src={founderVeraImg} alt="Vera Plümer" className="rounded-2xl aspect-square object-cover w-full max-w-sm mx-auto shadow-xl" />
+              <h3 className="font-heading text-2xl font-bold text-foreground">Vera Plümer</h3>
+              <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+                <p>{t(
+                  'Vera arbeitet als Coach und Dozentin mit Studierenden. Sie begleitet junge Menschen dabei, nicht nur einen Beruf zu wählen, sondern ihren eigenen Weg zu entwickeln.',
+                  'Vera works as a coach and lecturer with university students. She supports young people in shaping not just a career, but a direction that genuinely fits who they are.'
+                )}</p>
+                <p>{t(
+                  'In ihrer Arbeit nutzt sie unter anderem das Life Design Framework. Es geht um Selbstkenntnis, Experimente und bewusste Entscheidungen – nicht um schnelle Antworten oder vorgefertigte Lösungen.',
+                  "Her work draws on the Life Design framework. It's about self-awareness, experimentation, and making thoughtful decisions — not chasing quick answers."
+                )}</p>
+                <p className="text-foreground font-medium">{t(
+                  'Sie glaubt daran, dass Klarheit und Handlungsfähigkeit entstehen, wenn junge Menschen sich selbst ernst nehmen, ausprobieren und Verantwortung für ihren Weg übernehmen.',
+                  'She believes clarity and agency grow when young people take themselves seriously, explore, and step into responsibility for their own path.'
+                )}</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
