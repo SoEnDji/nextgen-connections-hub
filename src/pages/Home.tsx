@@ -71,40 +71,46 @@ const Home = () => {
       </section>
 
       {/* THE SHIFT — with image mosaic */}
-      <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0">
-          <img src={detailNotebook} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--section-dark))] via-[hsl(var(--section-dark)/0.85)] to-[hsl(var(--section-dark)/0.4)]" />
-        </div>
+      <section className="section-dark noise-overlay py-16 md:py-24">
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <motion.div {...fadeUp} className="max-w-2xl space-y-6">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
-              {t(
-                'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
-                'There was a time when choosing once meant choosing for life.'
-              )}
-            </h2>
-            <div className="space-y-4 text-lg leading-relaxed opacity-70">
-              <p>
+          <div className="grid lg:grid-cols-3 gap-8 items-center">
+            <motion.div {...fadeUp} className="lg:col-span-2 space-y-6">
+              <h2 className="font-heading text-3xl md:text-5xl font-bold leading-tight text-balance">
                 {t(
-                  'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
-                  "That time has passed. Today, paths shift. Industries evolve. New ideas appear overnight."
+                  'Die Welt verändert sich schnell. Die Möglichkeiten sind viele. Die Erwartungen sind hoch.',
+                  'There was a time when choosing once meant choosing for life.'
                 )}
-              </p>
-              <p>
-                {t(
-                  'Nur gibt es heute nicht mehr den einen klaren Weg, auf den man sich verlassen kann.',
-                  "That's not chaos. It's possibility."
-                )}
-              </p>
-              <p className="font-heading font-semibold opacity-100">
-                {t(
-                  '',
-                  'And possibility asks one thing: Who are you? And what will you build with it?'
-                )}
-              </p>
-            </div>
-          </motion.div>
+              </h2>
+              <div className="space-y-4 text-lg leading-relaxed max-w-2xl opacity-70">
+                <p>
+                  {t(
+                    'Von jungen Menschen wird früh erwartet, sich festzulegen – in einem System, das für gerade Lebensläufe gemacht wurde.',
+                    "That time has passed. Today, paths shift. Industries evolve. New ideas appear overnight."
+                  )}
+                </p>
+                <p>
+                  {t(
+                    'Nur gibt es heute nicht mehr den einen klaren Weg, auf den man sich verlassen kann.',
+                    "That's not chaos. It's possibility."
+                  )}
+                </p>
+                <p className="font-heading font-semibold opacity-100">
+                  {t(
+                    '',
+                    'And possibility asks one thing: Who are you? And what will you build with it?'
+                  )}
+                </p>
+              </div>
+            </motion.div>
+            <motion.div {...fadeUp} className="lg:col-span-1 relative group">
+              <img
+                src={detailNotebook}
+                alt=""
+                className="relative rounded-xl object-cover w-full aspect-square shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--section-dark))] via-transparent to-transparent rounded-xl opacity-50" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
