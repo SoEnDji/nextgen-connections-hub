@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
 import workshopImg from '@/assets/workshop.jpg';
 import aboutImg from '@/assets/about.jpg';
-import founderSohrabImg from '@/assets/founder-sohrab.jpg';
-import founderVeraImg from '@/assets/founder-vera.jpg';
+import founderSohrabImg from '@/assets/founder-vera.jpg';
+import founderVeraImg from '@/assets/founder-sohrab.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
