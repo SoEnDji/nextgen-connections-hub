@@ -103,17 +103,14 @@ const Home = () => {
               </div>
             </motion.div>
             {/* Image cluster */}
-            <motion.div {...fadeUp} className="lg:col-span-2 grid grid-cols-2 gap-3">
+            <motion.div {...fadeUp} className="lg:col-span-2 relative group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-accent/15 to-accent-electric/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 src={detailNotebook}
                 alt=""
-                className="rounded-xl object-cover w-full aspect-[3/4] grayscale hover:grayscale-0 transition-all duration-500"
+                className="relative rounded-2xl object-cover w-full aspect-[3/4] shadow-lg transition-transform duration-500 group-hover:scale-[1.01]"
               />
-              <img
-                src={detailCourt}
-                alt=""
-                className="rounded-xl object-cover w-full aspect-[3/4] mt-8 grayscale hover:grayscale-0 transition-all duration-500"
-              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--section-dark))] via-transparent to-transparent rounded-2xl opacity-60" />
             </motion.div>
           </div>
         </div>
