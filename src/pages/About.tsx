@@ -53,22 +53,43 @@ const About = () => {
               "Orientation doesn't come from pressure. It comes from self-knowledge, experience, and meaningful relationships."
             )}</p>
             <p>{t(
-              'Aus dieser Überzeugung ist 2Morrow Lab entstanden.',
-              'This conviction is what gave birth to 2Morrow Lab.'
+              'Diese Haltung prägt nicht nur unsere Arbeit. Sie prägt auch uns.',
+              "This mindset doesn't just shape our work. It shapes us."
             )}</p>
           </motion.div>
         </div>
       </section>
 
-      {/* TRANSITION BRIDGE */}
-      <section className="section-dark noise-overlay py-14 md:py-18">
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <motion.p {...fadeUp} className="text-xl md:text-2xl font-heading font-medium leading-relaxed opacity-80">
-            {t(
-              'Diese Haltung prägt nicht nur unsere Arbeit. Sie prägt auch uns.',
-              "This mindset doesn't just shape our work. It shapes us."
-            )}
-          </motion.p>
+      {/* UNSERE ERFAHRUNG */}
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div {...fadeUp} className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent-electric/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+            </motion.div>
+            <motion.div {...fadeUp} className="space-y-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unsere Erfahrung', 'Our Experience')}</h2>
+              <div className="space-y-4 text-lg opacity-70 leading-relaxed">
+                <p>{t(
+                  'Schule kennen wir nicht nur aus Konzeptpapieren.',
+                  "We don't know school from concept papers alone."
+                )}</p>
+                <p>{t(
+                  'Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen tätig – in einem Umfeld mit hohen sozialen und strukturellen Anforderungen.',
+                  "As Teach First Deutschland fellows, we spent two years at high-challenge schools — in environments with intense social and structural demands."
+                )}</p>
+                <p>{t(
+                  'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Fragen von Selbstführung, Leadership und Zukunftsgestaltung.',
+                  'Today, we work with young people, schools, and organizations on questions of self-leadership, leadership development, and shaping the future.'
+                )}</p>
+                <p className="opacity-100 font-medium">{t(
+                  '2Morrow Lab verbindet beide Welten.',
+                  '2Morrow Lab connects both worlds.'
+                )}</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -127,39 +148,6 @@ const About = () => {
                     'She believes clarity and agency grow when young people take themselves seriously, explore, and step into responsibility for their own path.'
                   )}</p>
                 </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* UNSERE ERFAHRUNG */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div {...fadeUp} className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-accent-electric/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img src={workshopImg} alt={t('Workshop', 'Workshop')} className="relative rounded-2xl shadow-xl w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
-            </motion.div>
-            <motion.div {...fadeUp} className="space-y-6">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unsere Erfahrung', 'Our Experience')}</h2>
-              <div className="space-y-4 text-lg opacity-70 leading-relaxed">
-                <p>{t(
-                  'Schule kennen wir nicht nur aus Konzeptpapieren.',
-                  "We don't know school from concept papers alone."
-                )}</p>
-                <p>{t(
-                  'Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen tätig – in einem Umfeld mit hohen sozialen und strukturellen Anforderungen.',
-                  "As Teach First Deutschland fellows, we spent two years at high-challenge schools — in environments with intense social and structural demands."
-                )}</p>
-                <p>{t(
-                  'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Fragen von Selbstführung, Leadership und Zukunftsgestaltung.',
-                  'Today, we work with young people, schools, and organizations on questions of self-leadership, leadership development, and shaping the future.'
-                )}</p>
-                <p className="opacity-100 font-medium">{t(
-                  '2Morrow Lab verbindet beide Welten.',
-                  '2Morrow Lab connects both worlds.'
-                )}</p>
               </div>
             </motion.div>
           </div>
