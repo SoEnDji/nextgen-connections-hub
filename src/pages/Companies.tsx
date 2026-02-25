@@ -61,25 +61,25 @@ const Companies = () => {
   return (
     <Layout>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="hero-gradient noise-overlay relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={companiesImg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 hero-gradient opacity-85" />
+          <img src={companiesImg} alt="" className="w-full h-full object-cover opacity-15 mix-blend-luminosity" />
         </div>
-        <div className="relative max-w-4xl mx-auto px-6 py-32 md:py-40">
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-accent-magenta/15 rounded-full blur-[120px]" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 md:py-40">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight text-balance glow-text">
               {t(
                 'Die Zukunft Ihrer Organisation entscheidet sich im Umgang mit Veränderung.',
                 'The future of your organization depends on how you navigate change.'
               )}
             </h1>
-            <p className="text-lg md:text-xl text-text-hero/70 max-w-2xl">
+            <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
               {t(
                 'In einer nichtlinearen Welt braucht Führung neue Perspektiven und echten Dialog.',
                 'In a nonlinear world, leadership needs fresh perspectives and authentic dialogue.'
@@ -87,7 +87,7 @@ const Companies = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
             >
               {t('Gespräch vereinbaren', 'Schedule a Conversation')}
               <ArrowRight className="w-4 h-4" />
@@ -97,7 +97,7 @@ const Companies = () => {
       </section>
 
       {/* REALITAET */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight text-balance">
@@ -125,15 +125,15 @@ const Companies = () => {
       </section>
 
       {/* UNSER ANSATZ */}
-      <section className="section-alt py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="section-dark noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">{t('Unser Ansatz', 'Our Approach')}</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">{t(
+            <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">{t('Unser Ansatz', 'Our Approach')}</h2>
+            <p className="text-lg opacity-70 leading-relaxed">{t(
               '2Morrow Lab schafft strukturierte Begegnungsräume zwischen Führungskräften und der nächsten Generation.',
               '2Morrow Lab creates structured spaces of encounter between leaders and the next generation.'
             )}</p>
-            <p className="text-lg text-muted-foreground leading-relaxed">{t(
+            <p className="text-lg opacity-70 leading-relaxed">{t(
               'Es entstehen Entwicklungsräume, in denen Perspektiven zusammenkommen und Verantwortung gemeinsam gedacht wird.',
               'These become development spaces where perspectives converge and responsibility is thought through together.'
             )}</p>
@@ -145,18 +145,18 @@ const Companies = () => {
                 t('Intergenerationellen Dialog', 'Intergenerational Dialogue'),
                 t('Schule als Ökosystem', 'School as Ecosystem'),
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border">
+                <div key={i} className="flex items-center gap-3 p-4 rounded-xl gradient-card border border-white/10">
                   <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
-                  <span className="font-heading font-semibold text-foreground">{item}</span>
+                  <span className="font-heading font-semibold text-white">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="pt-6 space-y-2 text-lg text-foreground font-medium">
+            <div className="pt-6 space-y-2 text-lg font-medium">
               <p>{t('Im Zentrum steht die Frage:', 'At the center stands the question:')}</p>
-              <p className="text-muted-foreground">{t('Wie entsteht Orientierung in Unsicherheit?', 'How does orientation emerge in uncertainty?')}</p>
-              <p className="text-muted-foreground">{t('Wie bleibt man handlungsfähig?', 'How do you stay capable of action?')}</p>
-              <p className="text-muted-foreground">{t('Wie gestaltet man Wandel bewusst?', 'How do you shape change intentionally?')}</p>
+              <p className="opacity-60">{t('Wie entsteht Orientierung in Unsicherheit?', 'How does orientation emerge in uncertainty?')}</p>
+              <p className="opacity-60">{t('Wie bleibt man handlungsfähig?', 'How do you stay capable of action?')}</p>
+              <p className="opacity-60">{t('Wie gestaltet man Wandel bewusst?', 'How do you shape change intentionally?')}</p>
               <p className="pt-2">{t(
                 'Diese Fragen betreffen junge Menschen ebenso wie Organisationen.',
                 'These questions matter to young people and organizations alike.'
@@ -167,19 +167,19 @@ const Companies = () => {
       </section>
 
       {/* WAS UNTERNEHMEN GEWINNEN */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeUp}>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-10">
               {t('Was Unternehmen gewinnen', 'What Companies Gain')}
             </h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
-              <motion.div key={i} {...fadeUp} transition={{ duration: 0.6, delay: i * 0.1 }} className="p-8 rounded-2xl bg-secondary border border-border">
-                <b.icon className="w-8 h-8 text-accent mb-5" />
+              <motion.div key={i} {...fadeUp} transition={{ duration: 0.6, delay: i * 0.1 }} className="p-7 rounded-2xl bg-card border border-border card-hover">
+                <b.icon className="w-7 h-7 text-accent mb-4" />
                 <h3 className="font-heading text-lg font-bold text-foreground mb-3">{b.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{b.desc}</p>
+                <p className="text-muted-foreground leading-relaxed text-sm">{b.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -187,15 +187,15 @@ const Companies = () => {
       </section>
 
       {/* CTA */}
-      <section className="hero-gradient py-24 md:py-32">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="hero-gradient noise-overlay py-20 md:py-28">
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-8">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-hero">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-hero glow-text">
               {t('Bereit für den Dialog?', 'Ready for dialogue?')}
             </h2>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg font-heading font-semibold hover:bg-accent-glow transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg font-heading font-semibold hover:bg-accent-glow transition-all duration-300 glow-accent"
             >
               {t('Gespräch vereinbaren', 'Schedule a Conversation')}
               <ArrowRight className="w-4 h-4" />

@@ -15,42 +15,48 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="py-32 md:py-40 bg-background">
-        <div className="max-w-4xl mx-auto px-6">
+      {/* HERO */}
+      <section className="hero-gradient noise-overlay relative overflow-hidden py-32 md:py-40">
+        <div className="absolute top-1/3 left-0 w-72 h-72 bg-accent/15 rounded-full blur-[100px]" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 mb-16"
+            className="space-y-6"
           >
-            <h1 className="font-heading text-4xl md:text-6xl font-bold text-foreground leading-tight">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold text-text-hero leading-tight glow-text">
               {t('Kontakt', 'Get in touch')}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-lg text-text-hero/60 max-w-2xl">
               {t(
                 'Du hast Fragen, willst mehr erfahren oder ein Gespräch starten? Wir freuen uns, von dir zu hören.',
                 "Have questions, want to learn more, or start a conversation? We'd love to hear from you."
               )}
             </p>
           </motion.div>
+        </div>
+      </section>
 
+      <section className="py-20 md:py-28 bg-background">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div {...fadeUp} className="space-y-8">
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border card-hover">
+                  <Mail className="w-6 h-6 text-accent mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-semibold text-foreground mb-1">E-Mail</h3>
                     <p className="text-muted-foreground">hello@2morrowlab.com</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <MessageSquare className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border card-hover">
+                  <MessageSquare className="w-6 h-6 text-accent mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-heading font-semibold text-foreground mb-1">
                       {t('Gespräch vereinbaren', 'Schedule a conversation')}
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-sm">
                       {t(
                         'Schreib uns und wir melden uns innerhalb von 48 Stunden.',
                         "Reach out and we'll get back to you within 48 hours."
@@ -62,7 +68,7 @@ const Contact = () => {
             </motion.div>
 
             <motion.div {...fadeUp}>
-              <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-5 p-6 rounded-2xl bg-card border border-border" onSubmit={(e) => e.preventDefault()}>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">{t('Name', 'Name')}</label>
                   <input
@@ -103,7 +109,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-colors"
+                  className="w-full bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
                 >
                   {t('Nachricht senden', 'Send message')}
                 </button>
