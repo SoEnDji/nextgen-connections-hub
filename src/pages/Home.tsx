@@ -157,11 +157,9 @@ const Home = () => {
                 "Not as candidates. Not as test subjects. But as collaborators."
               )}
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-lg font-heading font-semibold">
-              <span>{t('Mit Mut.', "Because leadership doesn't start later.")}</span>
-              <span className="bg-gradient-to-r from-accent to-accent-electric bg-clip-text text-transparent">{t('Mit Weitblick.', 'It starts when you decide')}</span>
-              <span>{t('Mit Menschen, die an dich glauben.', 'to take yourself seriously.')}</span>
-            </div>
+            <p className="text-lg font-heading font-semibold">
+              {t('Mit Mut. Mit Weitblick. Mit Menschen, die an dich glauben.', "Because leadership doesn't start later. It starts when you decide to take yourself seriously.")}
+            </p>
           </motion.div>
         </div>
       </section>
