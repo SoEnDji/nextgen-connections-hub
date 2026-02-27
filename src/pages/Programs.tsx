@@ -58,7 +58,7 @@ const Programs = () => {
               Summer Lab — Ignite
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
-              {t('12 Wochen, in denen du dich ernst nimmst.', 'A 12-week summer journey.')}
+              {t('12 Wochen, in denen du dich ernst nimmst.', 'A 12-week (summer) journey.')}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
               <p>{t(
