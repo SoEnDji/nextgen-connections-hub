@@ -23,7 +23,7 @@ const RoleCardsSection = () => {
         t('Finde heraus, was dir wichtig ist.', 'Discover what matters to you.'),
         t('Gestalte deinen Weg mit echter Unterstützung.', 'Shape your path with real support.'),
       ],
-      cta: t('Zur Early Cohort', 'Join the Early Cohort'),
+      cta: t('Programme entdecken', 'Explore Programs'),
       link: '/programs',
     },
     {
