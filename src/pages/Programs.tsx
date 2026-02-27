@@ -82,31 +82,48 @@ const Programs = () => {
               Life Design Year — Integrate
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
-              {t('Ein Schuljahr, das Entwicklung nicht nebenbei macht.', 'A full-year school partnership.')}
+              {t('Ein Schuljahr, das Entwicklung systematisch verankert.', 'A school year that makes development intentional.')}
             </h2>
-            <div className="grid sm:grid-cols-2 gap-5">
-              {[
-                { title: t('Reflexion', 'Reflection'), desc: t('Regelmäßige Standortbestimmung.', 'Regular self-assessment.') },
-                { title: t('Experimente', 'Experimentation'), desc: t('Neues ausprobieren, sicher scheitern.', 'Try new things, fail safely.') },
-                { title: t('KI-gestützte Begleitung', 'AI-supported check-ins'), desc: t('Dein persönlicher Denkpartner.', 'Your personal thinking partner.') },
-                { title: 'Agency Index', desc: t('Messbare Fortschritte.', 'Measurable growth.') },
-              ].map((item, i) => (
-                <div key={i} className="p-6 rounded-2xl gradient-card border border-white/10 card-hover">
-                  <h3 className="font-heading font-bold text-white mb-2">{item.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-lg text-white/60 leading-relaxed max-w-2xl">
+            <p className="text-lg text-white/60">
               {t(
-                'Entwicklung entsteht durch Übung — nicht durch Zufall.',
-                "Development isn't a one-off workshop. It's something you practice."
+                'Schüler:innen. Lehrkräfte. Schulleitung.',
+                'Students. Teachers. School leaders.'
+              )}
+            </p>
+            <div className="space-y-2 max-w-3xl">
+              <p className="text-white/60 font-heading font-semibold">
+                {t('Wir arbeiten entlang klarer Entwicklungsbausteine:', 'Built around clear development pillars:')}
+              </p>
+              <ul className="space-y-3">
+                {[
+                  t('Standortbestimmung und Zielklärung', 'Personal profiling & goal clarity'),
+                  t('Praxisorientierte Entwicklungsprojekte', 'Practice-based development projects'),
+                  t('KI-gestützte Reflexionsstruktur', 'AI-supported reflection structure'),
+                  t('Agency Index und Wirkungsmessung', 'Agency Index & measurable impact'),
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/60">
+                    <ArrowRight className="w-4 h-4 mt-1 text-accent-electric flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="text-lg text-white/60 leading-relaxed max-w-3xl">
+              {t(
+                'Regelmäßige Reflexion. Konkrete Umsetzung. Messbare Entwicklung.',
+                'Structured reflection. Real implementation. Visible growth.'
+              )}
+            </p>
+            <p className="font-heading font-semibold text-white text-lg">
+              {t(
+                'Kein Zusatzprogramm. Ein integrierter Entwicklungsprozess.',
+                'Not an add-on workshop. An integrated development process.'
               )}
             </p>
             <Link
-              to="/schools"
+              to="/contact"
               className="inline-flex items-center gap-2 bg-accent-electric text-white px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-electric/80 transition-all duration-300">
-              {t('Für Schulen', 'For Schools')}
+              {t('Mehr erfahren', 'Learn more')}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
