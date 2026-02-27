@@ -25,7 +25,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease }}>
 
             <p className="text-accent-lime font-heading font-semibold text-sm tracking-[0.2em] uppercase mb-6">
-              {t('Orientierung neu gedacht', 'Orientation, reimagined')}
+              {t('SINN STATT AUTOPILOT', 'PURPOSE OVER AUTOPILOT')}
             </p>
           </motion.div>
 
@@ -35,11 +35,6 @@ const HeroSection = () => {
             transition={{ duration: 0.9, delay: 0.1, ease }}
             className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8">
 
-            {t(
-              'Du bist nicht hier, um zu funktionieren.',
-              "You're not here to fit in."
-            )}
-            <br />
             <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
               {t('Du bist hier, um zu gestalten.', "You're here to shape what's next.")}
             </span>
