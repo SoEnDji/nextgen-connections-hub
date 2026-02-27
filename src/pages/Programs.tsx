@@ -70,12 +70,6 @@ const Programs = () => {
                 'Not for your résumé. For your life.'
               )}</p>
             </div>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent">
-              {t('Jetzt bewerben', 'Apply now')}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </motion.div>
         </div>
       </section>
