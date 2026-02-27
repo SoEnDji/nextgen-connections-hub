@@ -154,7 +154,7 @@ const Companies = () => {
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 p-4 rounded-xl gradient-card border border-white/10">
                   <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
-                  <span className="font-heading font-semibold text-white">{item}</span>
+                  <span className="font-heading font-semibold text-foreground">{item}</span>
                 </div>
               ))}
             </div>
