@@ -2,8 +2,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
-import founderSohrabImg from '@/assets/founder-sohrab.jpg';
-import founderVeraImg from '@/assets/founder-vera.jpg';
+import founderSohrabImg from '@/assets/founder-vera.jpg';
+import founderVeraImg from '@/assets/founder-sohrab.jpg';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
