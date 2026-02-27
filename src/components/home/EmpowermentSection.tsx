@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
-import collabImg from '@/assets/editorial-collab.jpg';
+import collabImg from '@/assets/detail-court.jpg';
 import teamworkImg from '@/assets/editorial-teamwork.jpg';
 
 const fade = {
