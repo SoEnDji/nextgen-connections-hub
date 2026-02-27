@@ -18,12 +18,12 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-16 md:pb-24 pt-32">
-        <div className="max-w-6xl">
+        <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease }}
-          >
+            transition={{ duration: 0.8, ease }}>
+
             <p className="text-accent-lime font-heading font-semibold text-sm tracking-[0.2em] uppercase mb-6">
               {t('Orientierung neu gedacht', 'Orientation, reimagined')}
             </p>
@@ -33,8 +33,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease }}
-            className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8"
-          >
+            className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8">
+
             {t(
               'Du bist nicht hier, um zu funktionieren.',
               "You're not here to fit in."
@@ -49,8 +49,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25, ease }}
-            className="text-lg md:text-xl text-white/60 max-w-md leading-relaxed mb-10"
-          >
+            className="text-lg md:text-xl max-w-md leading-relaxed mb-10 text-secondary">
+
             {t(
               'Die Zukunft ist nicht linear. Orientierung beginnt bei dir.',
               "The future isn't linear. Make it yours."
@@ -61,26 +61,26 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease }}
-            className="flex flex-wrap gap-4"
-          >
+            className="flex flex-wrap gap-4">
+
             <Link
               to="/programs"
-              className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200"
-            >
+              className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200">
+
               {t('Programme entdecken', 'Explore Programs')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-full font-heading font-semibold text-sm hover:bg-white/10 transition-colors duration-200"
-            >
+              className="inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-full font-heading font-semibold text-sm hover:bg-white/10 transition-colors duration-200">
+
               {t('Gespräch starten', 'Start a conversation')}
             </Link>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
