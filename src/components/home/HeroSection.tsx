@@ -67,7 +67,7 @@ const HeroSection = () => {
               to="/programs"
               className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200"
             >
-              {t('Zur Early Cohort', 'Join the Early Cohort')}
+              {t('Programme entdecken', 'Explore Programs')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
