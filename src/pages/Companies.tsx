@@ -144,8 +144,8 @@ const Companies = () => {
             </h2>
             <p className="text-lg opacity-70 leading-relaxed">
               {t(
-                'Wir sind keine Jobbörse. Wir sind eine Entwicklungsplattform im Ökosystem Schule/Hochschule – und bauen mit Unternehmen passgenaue Partnerschaften, die sich aus Modulen zusammensetzen.',
-                'We are not a job board. We are a development platform in the school/university ecosystem — building tailored partnerships with companies, composed of modules.'
+                'Wir sind keine Jobbörse. Wir sind eine Entwicklungsplattform im Ökosystem Schule/Hochschule und bauen mit Unternehmen passgenaue Partnerschaften, die sich aus Modulen zusammensetzen.',
+                'We are not a job board. We are a development platform in the school/university ecosystem and build tailored partnerships with companies, composed of modules.'
               )}
             </p>
 
