@@ -40,7 +40,7 @@ const HeroSection = () => {
             </span>
             <br />
             <span className="text-white">
-              {t('Nicht nur deinen Lebenslauf', 'Not just your résumé')}
+              {t('Nicht nur deinen Lebenslauf.', 'Not just your résumé.')}
             </span>
           </motion.h1>
 
