@@ -66,8 +66,13 @@ const ForSchools = () => {
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
               {t(
-                'Schulen sind mehr als Lernorte. Sie sind Lebensräume.',
-                'Schools are more than learning spaces. They are living ecosystems.'
+                'Schulen sind mehr als Lernorte.',
+                'Schools are more than learning spaces.'
+              )}
+              <br />
+              {t(
+                'Sie sind Lebensräume und Keim für gesellschaftliche Veränderung.',
+                'They are living ecosystems and seeds for societal change.'
               )}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
