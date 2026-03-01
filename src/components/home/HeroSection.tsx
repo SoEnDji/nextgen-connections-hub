@@ -36,7 +36,7 @@ const HeroSection = () => {
             className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8 max-w-4xl">
 
             <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
-              {t('Dream big & gestalte Dein Leben.', 'Dream big & shape your life.')}
+              {t('Trau dich & gestalte Dein Leben.', 'Dare to shape your life.')}
             </span>
             <br />
             <span className="text-white">
