@@ -51,8 +51,8 @@ const HeroSection = () => {
             className="text-lg md:text-xl max-w-md leading-relaxed mb-10 text-secondary">
 
             {t(
-              'Die Zukunft ist nicht linear. Orientierung beginnt bei dir.',
-              "The future isn't linear. Make it yours."
+              'Heute ein Schritt. Morgen dein Weg. 2Morrow Lab hilft dir, herauszufinden, wie du wirklich leben willst — nicht nur, was du später arbeiten sollst. Mit Life-Design-Loops, AI Companion und echten Projekten triffst du bessere Entscheidungen und gehst deinen nächsten Schritt mit Klarheit.',
+              'One step today. Your path tomorrow. 2Morrow Lab helps you figure out how you really want to live — not just what job to pursue. With Life-Design Loops, AI Companion, and real projects, you make better decisions and take your next step with clarity.'
             )}
           </motion.p>
 
