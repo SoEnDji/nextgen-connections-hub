@@ -36,7 +36,11 @@ const HeroSection = () => {
             className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8">
 
             <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
-              {t('Du bist hier, um zu gestalten.', "You're here to shape what's next.")}
+              {t('Dream big & gestalte Dein Leben.', 'Dream big & shape your life.')}
+            </span>
+            <br />
+            <span className="text-white">
+              {t('Nicht nur deinen Lebenslauf', 'Not just your résumé')}
             </span>
           </motion.h1>
 
