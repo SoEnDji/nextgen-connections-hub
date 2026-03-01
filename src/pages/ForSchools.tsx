@@ -36,8 +36,8 @@ const ForSchools = () => {
               </h1>
               <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
                 {t(
-                  'Entwicklung nachhaltig verankern – für Schüler:innen, Lehrkräfte und die ganze Schulgemeinschaft.',
-                  "Embedding growth sustainably — for students, educators, and the entire school community."
+                  'Entwicklung nachhaltig verankern. Für Schüler:innen, Lehrkräfte und die gesamte Schulgemeinschaft.',
+                  "Embedding growth sustainably. For students, educators, and the entire school community."
                 )}
               </p>
               <Link
