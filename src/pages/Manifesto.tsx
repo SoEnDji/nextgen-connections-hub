@@ -42,7 +42,7 @@ const Manifesto = () => {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-5xl font-bold glow-text">
-              {t('Warum? Unser Nordstern', 'Why? Our North Star')}
+              {t('Unser Nordstern', 'Our North Star')}
             </h2>
             <div className="space-y-6 text-lg text-white/60 leading-relaxed">
               <p className="text-white font-heading font-semibold text-xl">
@@ -73,7 +73,7 @@ const Manifesto = () => {
         <div className="max-w-3xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground">
-              {t('Wie? Unser Ansatz', 'How? Our Approach')}
+              {t('Unser Ansatz', 'Our Approach')}
             </h2>
             <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
               <p>
@@ -98,7 +98,7 @@ const Manifesto = () => {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-5xl font-bold glow-text">
-              {t('Was? Unsere Mission', 'What? Our Mission')}
+              {t('Unsere Mission', 'Our Mission')}
             </h2>
             <div className="space-y-6 text-lg text-white/60 leading-relaxed">
               <p>
