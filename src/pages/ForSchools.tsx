@@ -72,8 +72,8 @@ const ForSchools = () => {
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>{t(
-                '2Morrow Lab arbeitet mit Schulen, die bereit sind, Entwicklung neu zu denken – nicht als Zusatzprojekt, sondern als Teil der Schulkultur.',
-                "2Morrow Lab partners with schools ready to rethink development — not as an add-on, but as part of school culture."
+                '2Morrow Lab arbeitet mit Schulen, die bereit sind, die Entwicklung und Zukunftsgestaltung ihrer Schülerinnen und Schüler neu zu denken. Nicht als Zusatzprojekt, sondern als Teil der Schulkultur.',
+                "2Morrow Lab partners with schools ready to rethink how their students grow and shape their futures. Not as an add-on, but as part of school culture."
               )}</p>
               <p>{t(
                 'Unsere Programme verbinden Life Design, Adaptive Leadership und echte Begegnung – eingebettet in den schulischen Alltag.',
