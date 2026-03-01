@@ -87,8 +87,8 @@ const Companies = () => {
                 'Many organizations don\'t face a "skills shortage" — they face an attractiveness and culture mismatch. Gen Z (and soon Gen Alpha) evaluates employers differently: less titles, more purpose; less "command", more participation; less polish, more authenticity.'
               )}</p>
               <p>{t(
-                'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen – Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe, einfache Auswertungen. Das verschiebt die Logik von „Junior = macht Fleißarbeit" hin zu: Einstieg muss anders gebaut werden.',
-                'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles — research, documentation, standard analyses, routine communication, first drafts, simple evaluations. This shifts the logic from "junior = does grunt work" to: onboarding must be built differently.'
+                'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen. Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe, einfache Auswertungen. Das verschiebt die Logik von „Junior = macht Fleißarbeit" hin zu: Einstieg muss anders gebaut werden.',
+                'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles. Research, documentation, standard analyses, routine communication, first drafts, simple evaluations. This shifts the logic from "junior = does grunt work" to: onboarding must be built differently.'
               )}</p>
               <p className="font-heading font-semibold text-foreground text-base">
                 {t('Für Unternehmen heißt das:', 'For companies, this means:')}
