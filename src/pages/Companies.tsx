@@ -140,7 +140,7 @@ const Companies = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
-              {t('Der 2ML Ansatz', 'The 2ML Approach')}
+              {t('Der 2Morrow Lab Ansatz', 'The 2Morrow Lab Approach')}
             </h2>
             <p className="text-lg opacity-70 leading-relaxed">
               {t(
