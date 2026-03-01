@@ -407,7 +407,7 @@ const Companies = () => {
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-hero glow-text">
-              {t('Bereit für eine Partnerschaft?', 'Ready for a partnership?')}
+              {t('Bereit für neue Wege für deine Organisation und ihre Talente?', 'Ready for new paths for your organization and its talent?')}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
