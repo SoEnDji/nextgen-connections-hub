@@ -12,8 +12,13 @@ const Footer = () => {
             <h3 className="font-heading text-2xl font-bold mb-4">2Morrow Lab</h3>
             <p className="opacity-60 max-w-md leading-relaxed">
               {t(
-                'Eine Plattform für Entwicklungspartnerschaften. Junge Menschen. Unternehmen. Schulen. Gemeinsam.',
-                'A platform for development partnerships. Young people. Companies. Schools. Together.'
+                'Eine Plattform für Entwicklungspartnerschaften.',
+                'A platform for development partnerships.'
+              )}
+              <br />
+              {t(
+                'Junge Menschen. Unternehmen. Schulen. Gemeinsam.',
+                'Young people. Companies. Schools. Together.'
               )}
             </p>
           </div>
