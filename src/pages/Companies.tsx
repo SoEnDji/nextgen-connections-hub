@@ -86,6 +86,36 @@ const Companies = () => {
                 'Viele Organisationen erleben keinen „Fachkräftemangel", sondern einen Attraktivitäts- und Kulturmismatch. Gen Z (und bald Gen Alpha) bewertet Arbeitgeber anders: weniger Titel, mehr Sinn; weniger „Befehl", mehr Beteiligung; weniger Hochglanz, mehr Echtheit.',
                 'Many organizations don\'t face a "skills shortage" — they face an attractiveness and culture mismatch. Gen Z (and soon Gen Alpha) evaluates employers differently: less titles, more purpose; less "command", more participation; less polish, more authenticity.'
               )}</p>
+              <p>{t(
+                'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen – Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe, einfache Auswertungen. Das verschiebt die Logik von „Junior = macht Fleißarbeit" hin zu: Einstieg muss anders gebaut werden.',
+                'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles — research, documentation, standard analyses, routine communication, first drafts, simple evaluations. This shifts the logic from "junior = does grunt work" to: onboarding must be built differently.'
+              )}</p>
+              <p className="font-heading font-semibold text-foreground text-base">
+                {t('Für Unternehmen heißt das:', 'For companies, this means:')}
+              </p>
+              <ul className="space-y-2 text-base">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1 flex-shrink-0">→</span>
+                  {t(
+                    'Neue Einstiegsmöglichkeiten schaffen (früher, begleiteter, stärker lernorientiert).',
+                    'Create new entry pathways (earlier, more guided, more learning-oriented).'
+                  )}
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1 flex-shrink-0">→</span>
+                  {t(
+                    'Talenten früher verantwortungsvolle, wirkungsvolle Aufgaben geben – gerade weil KI Routinen abnimmt.',
+                    'Give talent meaningful, impactful tasks earlier — precisely because AI takes over routines.'
+                  )}
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-1 flex-shrink-0">→</span>
+                  {t(
+                    'Führung, Onboarding und Lernpfade so designen, dass junge Menschen nicht „überfordert reingeworfen", sondern gezielt befähigt werden.',
+                    'Design leadership, onboarding, and learning paths so young people aren\'t "thrown in overwhelmed" but purposefully empowered.'
+                  )}
+                </li>
+              </ul>
             </div>
             <div className="p-6 rounded-2xl border border-accent/20 bg-accent/5">
               <p className="font-heading font-semibold text-foreground text-base md:text-lg mb-2">
@@ -96,6 +126,9 @@ const Companies = () => {
                   'Instagram- und TikTok-Content ersetzt keine Kultur. Wenn ihr dort Freiheit, Sinn und Entwicklung versprecht, müsst ihr das im Alltag verkörpern – sonst wird Recruiting teuer, Retention schlecht, und euer Ruf kippt.',
                   'Instagram and TikTok content doesn\'t replace culture. If you promise freedom, purpose, and growth there, you need to embody it in daily work — otherwise recruiting gets expensive, retention suffers, and your reputation tips.'
                 )}
+              </p>
+              <p className="text-sm text-accent font-heading font-semibold mt-3">
+                #GenZReadiness #GenAlphaReadiness
               </p>
             </div>
           </motion.div>
@@ -197,8 +230,12 @@ const Companies = () => {
                   title: t('Talente halten', 'Retain Talent'),
                   items: [
                     t('Talent-Onboarding (30/60/90 Tage)', 'Talent onboarding (30/60/90 days)'),
-                    t('Journey mit Zielen, Check-ins, Feedback', 'Journey with goals, check-ins, feedback'),
-                    t('Mentor:innen-Setup + Frühwarnsignale', 'Mentor setup + early warning signals'),
+                    t('Onboarding ist kein „Willkommenspaket", sondern ein Übergang mit Abbruchrisiko. Wir unterstützen direkt im Onboardingprozess – nicht nur in der Konzeption.', 'Onboarding isn\'t a "welcome package" — it\'s a transition with dropout risk. We support directly in the onboarding process — not just in concept.'),
+                    t('Onboarding Coaching: Coaching für Talente und/oder Mentor:innen/Teamleads während der ersten Wochen (Check-ins, Erwartungsklärung, Integration, frühe Konfliktprävention).', 'Onboarding Coaching: Coaching for talent and/or mentors/team leads during the first weeks (check-ins, expectation alignment, integration, early conflict prevention).'),
+                    t('Individuelle Onboarding Journeys schnell bauen: Mit unserer Companion App könnt ihr leicht und schnell rollen- und personenspezifische Onboarding-Journeys erstellen (30/60/90), anpassen und steuern – ohne jedes Mal das Rad neu zu erfinden.', 'Build individual onboarding journeys fast: With our Companion App you can easily and quickly create role- and person-specific onboarding journeys (30/60/90), customize and manage them — without reinventing the wheel every time.'),
+                    t('Ziele, Check-ins, Feedbackschleifen (Rhythmus + Gesprächsleitfäden)', 'Goals, check-ins, feedback loops (rhythm + conversation guides)'),
+                    t('Mentor:innen-Setup + Frühwarnsignale & Interventionen', 'Mentor setup + early warning signals & interventions'),
+                    t('Ergebnis: weniger Abbrüche, schnellere Integration, klarere Entwicklung von Tag 1.', 'Result: fewer dropouts, faster integration, clearer development from day 1.'),
                     'Talent Culture',
                     t('Diagnose der Talent-Experience', 'Talent experience diagnosis'),
                     t('Micro-Rituale + Alignment in HR/Ausbildung/Führung', 'Micro-rituals + alignment in HR/training/leadership'),

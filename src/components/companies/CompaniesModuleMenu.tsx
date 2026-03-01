@@ -82,11 +82,11 @@ const CompaniesModuleMenu = () => {
       modules: [
         {
           code: 'B1',
-          title: 'Onboarding-Journey 30/60/90',
+          title: t('Onboarding-Journey 30/60/90 (mit Coaching & Companion App)', 'Onboarding Journey 30/60/90 (with Coaching & Companion App)'),
           bullets: [
-            t('Ziele, Check-ins, Feedbackschleifen', 'Goals, check-ins, feedback loops'),
-            t('Mentor:innen-Setup + Leitfäden', 'Mentor setup + guidelines'),
-            t('Frühwarnsignale & Interventionen', 'Early warning signals & interventions'),
+            t('Onboarding Coaching (Talent + Mentor:innen/Leads)', 'Onboarding Coaching (talent + mentors/leads)'),
+            t('Journeys schnell konfigurieren und individualisieren via Companion App', 'Quickly configure and individualize journeys via Companion App'),
+            t('Ziele, Check-ins, Feedback, Frühwarnsignale', 'Goals, check-ins, feedback, early warning signals'),
           ],
         },
         {
