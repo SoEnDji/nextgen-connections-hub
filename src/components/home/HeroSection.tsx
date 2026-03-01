@@ -33,7 +33,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease }}
-            className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8">
+            className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8 max-w-4xl">
 
             <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
               {t('Dream big & gestalte Dein Leben.', 'Dream big & shape your life.')}
