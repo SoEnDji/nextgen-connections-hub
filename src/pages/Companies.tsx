@@ -41,8 +41,8 @@ const Companies = () => {
               </h1>
               <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
                 {t(
-                  '2Morrow Lab verbindet Unternehmen mit jungen Talenten früher, passender und nachhaltiger als klassisches Recruiting – und unterstützt (bei Bedarf) den Umbau zur Organisation, in der Top-Talente bleiben und wachsen.',
-                  '2Morrow Lab connects companies with young talent earlier, more precisely, and more sustainably than traditional recruiting — and supports (where needed) the transformation into an organization where top talent stays and grows.'
+                  '2Morrow Lab verbindet Unternehmen mit jungen Talenten früher, passender und nachhaltiger als klassisches Recruiting und unterstützt (bei Bedarf) den Umbau zur Organisation, in der Top-Talente bleiben und wachsen.',
+                  '2Morrow Lab connects companies with young talent earlier, more precisely, and more sustainably than traditional recruiting and supports (where needed) the transformation into an organization where top talent stays and grows.'
                 )}
               </p>
               <div className="flex flex-wrap gap-3">
