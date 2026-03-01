@@ -118,9 +118,15 @@ const ValuePropositionSection = () => {
             )}
           </span>
           <span className="text-accent-lime font-semibold">
+            <br />
             {t(
-              'Klarheit für deinen Weg, Mut zum nächsten Schritt und Zuversicht für alles, was vor dir liegt.',
-              'Clarity for your path, courage for the next step, and confidence for everything ahead.'
+              'Klarheit für deinen Weg, Mut zum nächsten Schritt',
+              'Clarity for your path, courage for the next step,'
+            )}
+            <br />
+            {t(
+              'und Zuversicht für alles, was vor dir liegt.',
+              'and confidence for everything ahead.'
             )}
           </span>
         </motion.p>
