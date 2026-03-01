@@ -126,7 +126,7 @@ const Manifesto = () => {
             <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
               <p>
                 {t(
-                  'Montag, 7:42 Uhr. Zwischen Mathe und Deutsch sitzt eine Schülerin im Flur, das Handy in der Hand, den Blick zwischen Bildschirm und Boden. Dreiundzwanzig offene Tabs: Studiengänge, Ausbildungswege, Tests, Rankings, ein Video über „Jobs der Zukunft", ein Beitrag über KI, ein anderer über Klimakrise. Viel Information. Wenig Orientierung. Sie sucht nicht einfach den nächsten Abschluss. Sie sucht eine Richtung für ihr Leben.',
+                  'Montag, 9:42 Uhr. Zwischen Mathe und Deutsch sitzt eine Schülerin im Flur, das Handy in der Hand, den Blick zwischen Bildschirm und Boden. Dreiundzwanzig offene Tabs: Studiengänge, Ausbildungswege, Tests, Rankings, ein Video über „Jobs der Zukunft", ein Beitrag über KI, ein anderer über Klimakrise. Viel Information. Wenig Orientierung. Sie sucht nicht einfach den nächsten Abschluss. Sie sucht eine Richtung für ihr Leben.',
                   'Monday, 7:42 AM. Between math and German class, a student sits in the hallway, phone in hand, eyes shifting between screen and floor. Twenty-three open tabs: degree programs, training paths, tests, rankings, a video about "jobs of the future," a post about AI, another about the climate crisis. Lots of information. Little orientation. She\'s not just looking for her next qualification. She\'s looking for a direction for her life.'
                 )}
               </p>
