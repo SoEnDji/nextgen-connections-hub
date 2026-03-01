@@ -81,8 +81,8 @@ const ForSchools = () => {
                 "2Morrow Lab partners with schools ready to rethink how their students grow and shape their futures. Not as an add-on, but as part of school culture."
               )}</p>
               <p>{t(
-                'Unsere Programme verbinden Life Design, Adaptive Leadership und echte Begegnung – eingebettet in den schulischen Alltag.',
-                "Our programs connect Life Design, Adaptive Leadership, and real encounter — embedded in daily school life."
+                'Unsere Programme verbinden Life Design Thinking, Leadership & eigenverantwortliches Handeln mit echte Begegnungen, eingebettet in den schulischen Alltag.',
+                "Our programs blend Life Design Thinking, Leadership & self-directed action with real encounters, embedded in daily school life."
               )}</p>
             </div>
 
