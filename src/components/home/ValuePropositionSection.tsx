@@ -6,8 +6,8 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const steps = [
   {
     num: '01',
-    de: { title: 'Verstehen', desc: 'Du klärst, wer du bist, was dir wichtig ist und wie du leben willst.' },
-    en: { title: 'Understand', desc: 'You clarify who you are, what matters to you, and how you want to live.' },
+    de: { title: 'Verstehen', desc: 'Du klärst, wer du bist, was dir wichtig ist und wie du leben willst. Dabei findest du auch heraus, unter welchen Bedingungen du dein ganzes Potenzial entfalten kannst.' },
+    en: { title: 'Understand', desc: 'You clarify who you are, what matters to you, and how you want to live. Along the way, you discover the conditions under which you can unlock your full potential.' },
   },
   {
     num: '02',
