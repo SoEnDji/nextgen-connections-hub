@@ -120,7 +120,7 @@ const Companies = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
               {t('Der 2ML Ansatz', 'The 2ML Approach')}
             </h2>
-            <p className="text-lg opacity-70 leading-relaxed">
+            <p className="text-lg text-white/70 leading-relaxed">
               {t(
                 'Wir sind keine Jobbörse. Wir sind eine Entwicklungsplattform im Ökosystem Schule/Hochschule – und bauen mit Unternehmen passgenaue Partnerschaften, die sich aus Modulen zusammensetzen.',
                 'We are not a job board. We are a development platform in the school/university ecosystem — and build tailored partnerships with companies, composed of modules.'
@@ -128,7 +128,7 @@ const Companies = () => {
             </p>
 
             <div>
-              <h3 className="font-heading font-semibold text-lg mb-4 opacity-90">
+              <h3 className="font-heading font-semibold text-lg mb-4 text-white/90">
                 {t('Was das konkret bedeutet:', 'What this means concretely:')}
               </h3>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -150,11 +150,11 @@ const Companies = () => {
                     text: t('Grundlage für glaubwürdige Beziehung statt „Lead-Gen".', 'Foundation for credible relationships instead of "lead-gen".'),
                   },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5">
-                    <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2" />
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/15 bg-white/8">
+                    <div className="w-2 h-2 rounded-full bg-accent-lime flex-shrink-0 mt-2" />
                     <p className="text-sm leading-relaxed">
-                      <span className="font-heading font-semibold text-foreground">{item.bold}</span>{' '}
-                      <span className="opacity-70">{item.text}</span>
+                      <span className="font-heading font-semibold text-white">{item.bold}</span>{' '}
+                      <span className="text-white/80">{item.text}</span>
                     </p>
                   </div>
                 ))}
@@ -163,7 +163,7 @@ const Companies = () => {
 
             {/* Drei Prinzipien */}
             <div>
-              <h3 className="font-heading font-semibold text-lg mb-4 opacity-90">
+              <h3 className="font-heading font-semibold text-lg mb-4 text-white/90">
                 {t('Drei Prinzipien gegen Averagarianism (und für echte Passung):', 'Three principles against Averagarianism (and for real fit):')}
               </h3>
               <div className="space-y-3">
@@ -181,11 +181,11 @@ const Companies = () => {
                     text: t('Es gibt viele valide Wege – wir designen den Weg passend zur Person und Rolle.', 'There are many valid paths — we design the path to fit the person and role.'),
                   },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5">
-                    <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2" />
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/15 bg-white/8">
+                    <div className="w-2 h-2 rounded-full bg-accent-lime flex-shrink-0 mt-2" />
                     <p className="text-sm leading-relaxed">
-                      <span className="font-heading font-semibold text-foreground">{item.bold}</span>{' '}
-                      <span className="opacity-70">{item.text}</span>
+                      <span className="font-heading font-semibold text-white">{item.bold}</span>{' '}
+                      <span className="text-white/80">{item.text}</span>
                     </p>
                   </div>
                 ))}
@@ -311,7 +311,7 @@ const Companies = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
               {t('So läuft eine Partnerschaft ab', 'How a partnership works')}
             </h2>
-            <p className="text-lg opacity-60">
+            <p className="text-lg text-white/60">
               {t('(Beispiel – wird modular zusammengestellt)', '(Example — assembled modularly)')}
             </p>
 
@@ -372,13 +372,13 @@ const Companies = () => {
                   </div>
                   <div className="pb-8">
                     <div className="flex items-baseline gap-3 flex-wrap">
-                      <h3 className="font-heading font-bold text-foreground text-lg">{s.title}</h3>
-                      {s.time && <span className="text-xs font-heading text-accent opacity-80">{s.time}</span>}
+                      <h3 className="font-heading font-bold text-white text-lg">{s.title}</h3>
+                      {s.time && <span className="text-xs font-heading text-accent-lime">{s.time}</span>}
                     </div>
                     <ul className="mt-2 space-y-1">
                       {s.items.map((item, j) => (
-                        <li key={j} className="text-sm opacity-60 leading-relaxed flex items-start gap-2">
-                          <span className="text-accent mt-0.5 flex-shrink-0">→</span>{item}
+                        <li key={j} className="text-sm text-white/70 leading-relaxed flex items-start gap-2">
+                          <span className="text-accent-lime mt-0.5 flex-shrink-0">→</span>{item}
                         </li>
                       ))}
                     </ul>
