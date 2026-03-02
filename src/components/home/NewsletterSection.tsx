@@ -1,5 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const fade = {
   initial: { opacity: 0, y: 30 },
@@ -15,27 +17,29 @@ const NewsletterSection = () => {
     <section className="py-24 md:py-36 bg-foreground">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <motion.div {...fade} className="space-y-8">
-          <h2 className="font-heading text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.05]">
-            {t('Bleib nah dran.', "If you're ready to build something that fits you —")}
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.08]">
+            {t('Dein nächster Schritt', 'Your Next Step')}
           </h2>
-          <p className="text-xl text-white/50">
+          <p className="text-xl text-white/70 leading-relaxed">
             {t(
-              'Einladungen. Impulse. Neue Formate. Direkt in dein Postfach.',
-              'Step in.'
+              'Es gibt nicht den einen richtigen Weg. Aber es gibt deinen nächsten Schritt. Und der beginnt hier.',
+              "There's no single right path. But there is your next step. And it starts here."
             )}
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto pt-2">
-            <input
-              type="email"
-              placeholder={t('Deine E-Mail-Adresse', 'Your email address')}
-              className="flex-1 px-6 py-4 rounded-full border-0 bg-white/10 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-accent-lime/50 backdrop-blur-sm text-sm"
-            />
-            <button className="bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200 whitespace-nowrap">
-              {t('Newsletter abonnieren', 'Subscribe')}
-            </button>
+          <div className="pt-4">
+            <Link
+              to="/programs"
+              className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-10 py-5 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200"
+            >
+              {t('Jetzt starten', 'Get Started')}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
-          <p className="text-xs text-white/30">
-            {t('Newsletter-Integration kommt bald.', 'Newsletter integration coming soon.')}
+          <p className="text-sm text-white/40">
+            {t(
+              'Kostenlos. Ohne Anmeldezwang. Deine Daten gehören dir.',
+              'Free. No sign-up required. Your data belongs to you.'
+            )}
           </p>
         </motion.div>
       </div>
