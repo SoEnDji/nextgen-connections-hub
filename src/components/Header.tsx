@@ -15,6 +15,7 @@ const Header = () => {
     { path: '/companies', label: t('Für Unternehmen', 'For Companies') },
     { path: '/about', label: t('Über uns', 'About') },
     { path: '/manifesto', label: t('Warum und Wofür', 'Why and What For') },
+    { path: '/der-weg', label: t('Der Weg', 'The Path') },
     { path: '/contact', label: t('Kontakt', 'Contact') },
   ];
 

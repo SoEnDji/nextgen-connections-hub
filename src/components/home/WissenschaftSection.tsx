@@ -36,7 +36,7 @@ const WissenschaftSection = () => {
           </p>
 
           <Link
-            to="/manifesto"
+            to="/der-weg"
             className="group inline-flex items-center gap-2 text-accent-lime font-heading font-bold text-sm hover:gap-3 transition-all"
           >
             {t('Mehr über den Weg erfahren', 'Learn more about the path')}
