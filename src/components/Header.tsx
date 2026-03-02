@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/programs', label: t('Programme', 'Programs') },
+    // { path: '/programs', label: t('Programme', 'Programs') }, // hidden, kept as backup
     { path: '/schools', label: t('Für Schulen', 'For Schools') },
     { path: '/companies', label: t('Für Unternehmen', 'For Companies') },
     { path: '/about', label: t('Über uns', 'About') },
