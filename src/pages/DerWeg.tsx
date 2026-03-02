@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
+import effizienzPrinzip from '@/assets/effizienz-prinzip.png';
+import lifeDesignPrinzip from '@/assets/life-design-prinzip.png';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -59,6 +61,20 @@ const DerWeg = () => {
                 'It\'s not a linear process — you can jump in at any point, go back, or take shortcuts. But there are three major phases that have proven effective:'
               )}
             </p>
+          </motion.div>
+
+          {/* Prinzip-Vergleich Bilder */}
+          <motion.div {...fade} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            <img
+              src={effizienzPrinzip}
+              alt="Das alte Effizienz Prinzip — ein optimierter, direkter Pfad zum klar definierten Ziel"
+              className="w-full rounded-2xl border border-border"
+            />
+            <img
+              src={lifeDesignPrinzip}
+              alt="Life Design Prinzip — mehrere Pfade, mehrere Startpunkte, veränderliche Ziele"
+              className="w-full rounded-2xl border border-border"
+            />
           </motion.div>
         </div>
       </section>
