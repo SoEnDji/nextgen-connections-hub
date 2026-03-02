@@ -35,12 +35,12 @@ const HeroSection = () => {
             transition={{ duration: 0.9, delay: 0.1, ease }}
             className="font-heading text-[clamp(2.5rem,8vw,6rem)] font-bold text-white leading-[0.95] tracking-tight mb-8 max-w-4xl">
 
-            <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
-              {t('Designe Dein Leben.', 'Design your life.')}
+            <span className="text-white">
+              {t('Du brauchst keinen Masterplan.', "You don't need a masterplan.")}
             </span>
             <br />
-            <span className="text-white">
-              {t('Nicht nur deinen Lebenslauf.', 'Not just your résumé.')}
+            <span className="bg-gradient-to-r from-accent-lime via-accent-electric to-accent bg-clip-text text-transparent">
+              {t('Du brauchst einen Prototypen.', 'You need a prototype.')}
             </span>
           </motion.h1>
 
@@ -51,8 +51,8 @@ const HeroSection = () => {
             className="text-lg md:text-xl max-w-md leading-relaxed mb-10 text-secondary">
 
             {t(
-              'Heute ein Schritt. Morgen dein Weg. 2Morrow Lab hilft dir, herauszufinden, wie du wirklich leben willst — nicht nur, was du später arbeiten sollst. Mit Life-Design-Loops, AI Companion und echten Projekten triffst du bessere Entscheidungen und gehst deinen nächsten Schritt mit Klarheit.',
-              'One step today. Your path tomorrow. 2Morrow Lab helps you figure out how you really want to live — not just what job to pursue. With Life-Design Loops, AI Companion, and real projects, you make better decisions and take your next step with clarity.'
+              'Dein Leben ist kein Rätsel, das gelöst werden muss. Es ist ein Designprojekt, das gestaltet werden will. 2Morrow Lab hilft dir herauszufinden, was dich wirklich lebendig macht — und daraus Zukunft zu bauen.',
+              "Your life isn't a puzzle to be solved. It's a design project waiting to be shaped. 2Morrow Lab helps you discover what truly makes you come alive — and build a future from it."
             )}
           </motion.p>
 
@@ -66,14 +66,14 @@ const HeroSection = () => {
               to="/programs"
               className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200">
 
-              {t('Programme entdecken', 'Explore Programs')}
+              {t('Starte deine Reise', 'Start Your Journey')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to="/contact"
+              to="/programs"
               className="inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-full font-heading font-semibold text-sm hover:bg-white/10 transition-colors duration-200">
 
-              {t('Gespräch starten', 'Start a conversation')}
+              {t('Wie funktioniert das?', 'How does it work?')}
             </Link>
           </motion.div>
         </div>
