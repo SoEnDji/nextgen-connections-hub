@@ -70,7 +70,7 @@ const HeroSection = () => {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to="/programs"
+              to="/der-weg"
               className="inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-4 rounded-full font-heading font-semibold text-sm hover:bg-white/10 transition-colors duration-200">
 
               {t('Wie funktioniert das?', 'How does it work?')}
