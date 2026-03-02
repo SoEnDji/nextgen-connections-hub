@@ -10,12 +10,12 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
+    { path: '/der-weg', label: t('Der Weg', 'The Path') },
     // { path: '/programs', label: t('Programme', 'Programs') }, // hidden, kept as backup
     { path: '/schools', label: t('Für Schulen', 'For Schools') },
     { path: '/companies', label: t('Für Unternehmen', 'For Companies') },
     { path: '/about', label: t('Über uns', 'About') },
     { path: '/manifesto', label: t('Warum und Wofür', 'Why and What For') },
-    { path: '/der-weg', label: t('Der Weg', 'The Path') },
     { path: '/contact', label: t('Kontakt', 'Contact') },
   ];
 
