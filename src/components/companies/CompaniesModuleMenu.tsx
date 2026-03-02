@@ -53,6 +53,7 @@ const CompaniesModuleMenu = () => {
             t('Matching nach Skills + Interessen + Werte + Zielen', 'Matching by skills + interests + values + goals'),
             t('Shortlists inkl. Match-Begründung', 'Shortlists incl. match rationale'),
             t('Warm Intros / moderierte Erstgespräche (optional)', 'Warm intros / moderated first conversations (optional)'),
+            t('Zusatz: Matching auf komplementäre, „gezackte" Profile und Kontext-Passung – nicht gegen „Durchschnitt".', 'Additional: Matching for complementary, "jagged" profiles and context fit — not against "average."'),
           ],
         },
         {
@@ -84,9 +85,10 @@ const CompaniesModuleMenu = () => {
           code: 'B1',
           title: t('Onboarding-Journey 30/60/90 (mit Coaching & Companion App)', 'Onboarding Journey 30/60/90 (with Coaching & Companion App)'),
           bullets: [
-            t('Onboarding Coaching (Talent + Mentor:innen/Leads)', 'Onboarding Coaching (talent + mentors/leads)'),
-            t('Journeys schnell konfigurieren und individualisieren via Companion App', 'Quickly configure and individualize journeys via Companion App'),
-            t('Ziele, Check-ins, Feedback, Frühwarnsignale', 'Goals, check-ins, feedback, early warning signals'),
+            t('Onboarding Coaching: Begleitung von Talenten und/oder Mentor:innen/Teamleads in den ersten Wochen (Check-ins, Erwartungsklärung, Integration, frühe Konfliktprävention)', 'Onboarding Coaching: Supporting talent and/or mentors/team leads in the first weeks (check-ins, expectation alignment, integration, early conflict prevention)'),
+            t('Companion App: individuelle Onboarding-Journeys pro Rolle und Person schnell bauen (30/60/90, Lernziele, Check-ins, Rituale, Frühwarnsignale)', 'Companion App: quickly build individual onboarding journeys per role and person (30/60/90, learning goals, check-ins, rituals, early warning signals)'),
+            t('Ziele, Feedbackschleifen, Rhythmus + Gesprächsleitfäden', 'Goals, feedback loops, rhythm + conversation guides'),
+            t('Frühwarnsignale & Interventionen', 'Early warning signals & interventions'),
           ],
         },
         {
@@ -121,6 +123,7 @@ const CompaniesModuleMenu = () => {
             t('Kompetenz- & Lernpfade (Future Skills + rollenspezifisch)', 'Competency & learning paths (future skills + role-specific)'),
             t('Entwicklungsarchitektur (Projekte, Reflexion, Transfer)', 'Development architecture (projects, reflection, transfer)'),
             t('Messlogik (Time-to-Competence, Bindung, Drop-out-Risiko)', 'Measurement logic (time-to-competence, retention, drop-out risk)'),
+            t('Zusatz: individuelle Lernpfade statt Einheitscurriculum – Pathways nach Person/Rolle.', 'Additional: individual learning paths instead of standard curriculum — pathways per person/role.'),
           ],
         },
         {
@@ -137,7 +140,7 @@ const CompaniesModuleMenu = () => {
     {
       key: 'D',
       icon: Building2,
-      label: t('Organisation zukunftsfähig machen (Transformation) — mit Thrive (Berlin)', 'Future-proof the Organization (Transformation) — with Thrive (Berlin)'),
+      label: t('Organisation zukunftsfähig machen (Transformation) — in Zusammenarbeit mit unserem Partner Thrive', 'Future-proof the Organization (Transformation) — in collaboration with our partner Thrive'),
       modules: [
         {
           code: 'D1',
@@ -243,14 +246,20 @@ const CompaniesModuleMenu = () => {
                     <div className="mt-4 p-4 rounded-lg border border-accent/20 bg-accent/5">
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         {t(
-                          'Wenn die Organisation nicht hält, was das Employer Branding verspricht, verliert ihr die Besten – selbst bei perfektem Recruiting. Für tiefgreifende Organisations- und Leadershipentwicklung bieten wir deshalb gemeinsam mit unserer Berliner Partnerorganisation Thrive einen umfassenden Transformationsprozess.',
-                          "If the organization doesn't deliver what employer branding promises, you lose the best — even with perfect recruiting. For deep organizational and leadership development, we therefore offer a comprehensive transformation process together with our Berlin partner organization Thrive."
+                          'Wenn die Organisation nicht hält, was das Employer Branding verspricht, verliert ihr die Besten – selbst bei perfektem Recruiting. Für tiefgreifende Organisations- und Leadershipentwicklung bieten wir gemeinsam mit unserer Berliner Partnerorganisation Thrive einen umfassenden Transformationsprozess.',
+                          "If the organization doesn't deliver what employer branding promises, you lose the best — even with perfect recruiting. For deep organizational and leadership development, we offer a comprehensive transformation process together with our Berlin partner organization Thrive."
                         )}
                       </p>
                       <p className="text-sm text-foreground font-medium mt-3">
                         {t(
-                          'Worum es geht: Eine Organisation zu gestalten, in der Top-Talente gerne starten, bleiben und ihr Potenzial langfristig entfalten – strukturell, kulturell und führungsseitig.',
-                          'What it\'s about: Designing an organization where top talent happily starts, stays, and unfolds their potential long-term — structurally, culturally, and in terms of leadership.'
+                          'Worum es geht: Eine Organisation zu gestalten, in der Top-Talente gern an den Start gehen, bleiben und ihr Potenzial langfristig entfalten – strukturell, kulturell und führungsseitig.',
+                          'What it\'s about: Designing an organization where top talent happily gets started, stays, and unfolds their potential long-term — structurally, culturally, and in terms of leadership.'
+                        )}
+                      </p>
+                      <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                        {t(
+                          'Warum das hier dazugehört (Averagarianism im Betrieb): Viele Organisationen sind noch nach Standardisierung gebaut: Einheitsrollen, Einheitsprozesse, Einheitsbewertungen. Das ist Averagarianism in der Praxis. Zukunftsfähige Organisationen ersetzen das durch Equal Fit: Rollen, Lernräume, Entscheidungslogik und Führung so gestalten, dass unterschiedliche Profile wirksam werden können.',
+                          'Why this belongs here (Averagarianism in practice): Many organizations are still built on standardization: uniform roles, uniform processes, uniform evaluations. That\'s Averagarianism in practice. Future-proof organizations replace this with Equal Fit: designing roles, learning spaces, decision-making logic, and leadership so that different profiles can be effective.'
                         )}
                       </p>
                     </div>
