@@ -23,14 +23,14 @@ const WissenschaftSection = () => {
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             {t(
-              '2Morrow Lab basiert auf den Methoden des Life Design — entwickelt an der Stanford University, erprobt mit tausenden jungen Menschen weltweit. Kein theoretisches Konzept, sondern ein praktischer Prozess: erkunden, ausprobieren, reflektieren, weitermachen.',
+              '2Morrow Lab basiert auf den Methoden des Life Design, entwickelt an der Stanford University, erprobt mit tausenden jungen Menschen weltweit. Kein theoretisches Konzept, sondern ein praktischer Prozess: erkunden, ausprobieren, reflektieren, weitermachen.',
               '2Morrow Lab is based on Life Design methods — developed at Stanford University, tested with thousands of young people worldwide. Not a theoretical concept, but a practical process: explore, experiment, reflect, move forward.'
             )}
           </p>
 
           <p className="text-lg md:text-xl text-foreground leading-relaxed font-medium">
             {t(
-              'Wir haben diesen Ansatz für deine Realität angepasst: für die Übergangsphase von Schule oder Studium ins Leben. Für eine Generation, die mehr Möglichkeiten hat als jede zuvor — und genau deshalb einen Kompass braucht, keine weitere Optionenliste.',
+              'Wir haben diesen Ansatz für deine Realität angepasst: für die Übergangsphase von Schule oder Studium ins Leben. Für eine Generation, die mehr Möglichkeiten hat als jede zuvor und genau deshalb einen Kompass braucht, keine weitere Optionenliste.',
               "We've adapted this approach for your reality: for the transition from school or university into life. For a generation with more options than ever before — and that's exactly why you need a compass, not another list of options."
             )}
           </p>
