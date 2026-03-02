@@ -41,8 +41,8 @@ const Companies = () => {
               </h1>
               <p className="text-lg md:text-xl text-text-hero/60 max-w-2xl">
                 {t(
-                  '2Morrow Lab verbindet Unternehmen mit jungen Talenten früher, passender und nachhaltiger als klassisches Recruiting und unterstützt (bei Bedarf) den Umbau zur Organisation, in der Top-Talente bleiben und wachsen.',
-                  '2Morrow Lab connects companies with young talent earlier, more precisely, and more sustainably than traditional recruiting and supports (where needed) the transformation into an organization where top talent stays and grows.'
+                  '2Morrow Lab verbindet Unternehmen mit jungen Talenten früher, passender und nachhaltiger als klassisches Recruiting – und unterstützt (bei Bedarf) den Umbau zur Organisation, in der Top-Talente bleiben und wachsen.',
+                  '2Morrow Lab connects companies with young talent earlier, more precisely, and more sustainably than traditional recruiting — and supports (where needed) the transformation into an organization where top talent stays and grows.'
                 )}
               </p>
               <div className="flex flex-wrap gap-3">
@@ -79,7 +79,7 @@ const Companies = () => {
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight text-balance">
-              {t('Warum jetzt: Kulturclash & Realität', 'Why now: Culture clash & reality')}
+              {t('Warum jetzt: Kulturclash, KI – und das Ende des Durchschnitts', 'Why now: Culture clash, AI — and the end of averages')}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
               <p>{t(
@@ -87,35 +87,13 @@ const Companies = () => {
                 'Many organizations don\'t face a "skills shortage" — they face an attractiveness and culture mismatch. Gen Z (and soon Gen Alpha) evaluates employers differently: less titles, more purpose; less "command", more participation; less polish, more authenticity.'
               )}</p>
               <p>{t(
-                'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen. Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe, einfache Auswertungen. Das verschiebt die Logik von „Junior = macht Fleißarbeit" hin zu: Einstieg muss anders gebaut werden.',
-                'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles. Research, documentation, standard analyses, routine communication, first drafts, simple evaluations. This shifts the logic from "junior = does grunt work" to: onboarding must be built differently.'
+                'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen – Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe. Damit bricht die alte Logik „Junior = Fleißarbeit" weg. Wer jetzt gewinnt, baut Einstieg neu: begleitet, lernorientiert, wirksam – und gibt Talenten früher herausfordernde Aufgaben, weil KI Routinen abnimmt.',
+                'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles — research, documentation, standard analyses, routine communication, first drafts. This breaks the old logic of "junior = grunt work." Those who win now rebuild entry: guided, learning-oriented, impactful — and give talent challenging tasks earlier, because AI takes over routines.'
               )}</p>
-              <p className="font-heading font-semibold text-foreground text-base">
-                {t('Für Unternehmen heißt das:', 'For companies, this means:')}
-              </p>
-              <ul className="space-y-2 text-base">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1 flex-shrink-0">→</span>
-                  {t(
-                    'Neue Einstiegsmöglichkeiten schaffen (früher, begleiteter, stärker lernorientiert).',
-                    'Create new entry pathways (earlier, more guided, more learning-oriented).'
-                  )}
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1 flex-shrink-0">→</span>
-                  {t(
-                    'Talenten früher verantwortungsvolle, wirkungsvolle Aufgaben geben – gerade weil KI Routinen abnimmt.',
-                    'Give talent meaningful, impactful tasks earlier — precisely because AI takes over routines.'
-                  )}
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent mt-1 flex-shrink-0">→</span>
-                  {t(
-                    'Führung, Onboarding und Lernpfade so designen, dass junge Menschen nicht „überfordert reingeworfen", sondern gezielt befähigt werden.',
-                    'Design leadership, onboarding, and learning paths so young people aren\'t "thrown in overwhelmed" but purposefully empowered.'
-                  )}
-                </li>
-              </ul>
+              <p>{t(
+                'Und darunter liegt die Grundfrage, die viele Prozesse entlarvt: Averagarianism – Talente über Durchschnitt, Rankings und Standardpfade zu „verstehen". Das funktioniert schlecht, weil niemand „average" ist. Talent ist mehrdimensional, kontextabhängig und entwickelt sich entlang unterschiedlicher Wege. Genau deshalb bauen wir Einstiege und Entwicklung als Equal-Fit-Partnerschaft: passgenau statt standardisiert.',
+                'And underneath lies the fundamental question that exposes many processes: Averagarianism — trying to "understand" talent through averages, rankings, and standardized paths. This works poorly because nobody is "average." Talent is multidimensional, context-dependent, and develops along different paths. That\'s exactly why we build entry and development as an equal-fit partnership: tailored instead of standardized.'
+              )}</p>
             </div>
             <div className="p-6 rounded-2xl border border-accent/20 bg-accent/5">
               <p className="font-heading font-semibold text-foreground text-base md:text-lg mb-2">
@@ -140,12 +118,12 @@ const Companies = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
-              {t('Der 2Morrow Lab Ansatz', 'The 2Morrow Lab Approach')}
+              {t('Der 2ML Ansatz', 'The 2ML Approach')}
             </h2>
             <p className="text-lg opacity-70 leading-relaxed">
               {t(
-                'Wir sind keine Jobbörse. Wir sind eine Entwicklungsplattform im Ökosystem Schule/Hochschule und bauen mit Unternehmen passgenaue Partnerschaften, die sich aus Modulen zusammensetzen.',
-                'We are not a job board. We are a development platform in the school/university ecosystem and build tailored partnerships with companies, composed of modules.'
+                'Wir sind keine Jobbörse. Wir sind eine Entwicklungsplattform im Ökosystem Schule/Hochschule – und bauen mit Unternehmen passgenaue Partnerschaften, die sich aus Modulen zusammensetzen.',
+                'We are not a job board. We are a development platform in the school/university ecosystem — and build tailored partnerships with companies, composed of modules.'
               )}
             </p>
 
@@ -182,6 +160,37 @@ const Companies = () => {
                 ))}
               </div>
             </div>
+
+            {/* Drei Prinzipien */}
+            <div>
+              <h3 className="font-heading font-semibold text-lg mb-4 opacity-90">
+                {t('Drei Prinzipien gegen Averagarianism (und für echte Passung):', 'Three principles against Averagarianism (and for real fit):')}
+              </h3>
+              <div className="space-y-3">
+                {[
+                  {
+                    bold: t('Jagged Talent statt One-Score:', 'Jagged Talent instead of One-Score:'),
+                    text: t('Talent ist ein Profil aus mehreren Dimensionen – nicht GPA, nicht ein Intervieweindruck, nicht ein Ranking.', 'Talent is a profile of multiple dimensions — not GPA, not one interview impression, not a ranking.'),
+                  },
+                  {
+                    bold: t('Context Fit statt Trait-Labels:', 'Context Fit instead of Trait Labels:'),
+                    text: t('Nicht „ist motiviert", sondern: in welchem Umfeld liefert jemand welche Leistung und lernt wie?', 'Not "is motivated," but: in which environment does someone deliver which performance and learn how?'),
+                  },
+                  {
+                    bold: t('Pathways statt Standardkarriere:', 'Pathways instead of standard careers:'),
+                    text: t('Es gibt viele valide Wege – wir designen den Weg passend zur Person und Rolle.', 'There are many valid paths — we design the path to fit the person and role.'),
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5">
+                    <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2" />
+                    <p className="text-sm leading-relaxed">
+                      <span className="font-heading font-semibold text-foreground">{item.bold}</span>{' '}
+                      <span className="opacity-70">{item.text}</span>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -191,12 +200,12 @@ const Companies = () => {
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight text-balance">
-              {t('Unsere Partnerschaft: modular, passgenau, skalierbar', 'Our partnership: modular, tailored, scalable')}
+              {t('Unsere Angebot für eine partnerschaftliche Zusammenarbeit: modular, passgenau, skalierbar', 'Our offer for a collaborative partnership: modular, tailored, scalable')}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
               {t(
-                'Es gibt bei uns kein One-Size-Fits-All. Wir setzen eine Partnerschaft aus Modulen zusammen – je nach Rolle, Region, Zielgruppe und Organisationsreife.',
-                'There is no one-size-fits-all with us. We assemble a partnership from modules — depending on role, region, target group, and organizational maturity.'
+                'Es gibt bei uns kein One-Size-Fits-All. Wir setzen eine Partnerschaft aus Modulen zusammen – je nach Rolle, Region, Zielgruppe und Organisationsreife. Entwicklungspartnerschaften wie Praktikum, Ausbildung, Traineeship, Anstellung sind dabei kein Einheitskanal, sondern Bausteine im individuellen Pfad: Einstieg → Wirksamkeit → Entwicklung.',
+                'There is no one-size-fits-all with us. We assemble a partnership from modules — depending on role, region, target group, and organizational maturity. Development partnerships like internships, apprenticeships, traineeships, and employment are not a one-size channel, but building blocks in an individual path: entry → impact → development.'
               )}
             </p>
           </motion.div>
@@ -204,7 +213,7 @@ const Companies = () => {
           {/* Leistungen */}
           <motion.div {...fadeUp} className="mt-12 space-y-6">
             <h3 className="font-heading text-2xl font-bold text-foreground">
-              {t('Leistungen (kurz & klar)', 'Services (short & clear)')}
+              {t('Unsere vier Wirkungsfelder:', 'Our four areas of impact:')}
             </h3>
             <div className="grid md:grid-cols-2 gap-5">
               {[
@@ -218,6 +227,7 @@ const Companies = () => {
                     t('Talent Matching aus dem 2ML Talentpool', 'Talent matching from the 2ML talent pool'),
                     t('Matching nach Skills + Interessen + Werte + Zielen', 'Matching by skills + interests + values + goals'),
                     t('Shortlists + Warm Intros (optional)', 'Shortlists + warm intros (optional)'),
+                    t('Kontext-Fit statt Durchschnittsfilter', 'Context fit instead of average filter'),
                     t('Employer Branding (glaubwürdig, nicht geschniegelt)', 'Employer branding (credible, not slick)'),
                     t('Entwicklungsversprechen, Realistic Job Preview, klare Erwartungen', 'Development promise, realistic job preview, clear expectations'),
                     t('Content: echte Einblicke statt Imagefilm', 'Content: real insights instead of image films'),
@@ -229,13 +239,10 @@ const Companies = () => {
                   num: '02',
                   title: t('Talente halten', 'Retain Talent'),
                   items: [
-                    t('Talent-Onboarding (30/60/90 Tage)', 'Talent onboarding (30/60/90 days)'),
-                    t('Onboarding ist kein „Willkommenspaket", sondern ein Übergang mit Abbruchrisiko. Wir unterstützen direkt im Onboardingprozess – nicht nur in der Konzeption.', 'Onboarding isn\'t a "welcome package" — it\'s a transition with dropout risk. We support directly in the onboarding process — not just in concept.'),
-                    t('Onboarding Coaching: Coaching für Talente und/oder Mentor:innen/Teamleads während der ersten Wochen (Check-ins, Erwartungsklärung, Integration, frühe Konfliktprävention).', 'Onboarding Coaching: Coaching for talent and/or mentors/team leads during the first weeks (check-ins, expectation alignment, integration, early conflict prevention).'),
-                    t('Individuelle Onboarding Journeys schnell bauen: Mit unserer Companion App könnt ihr leicht und schnell rollen- und personenspezifische Onboarding-Journeys erstellen (30/60/90), anpassen und steuern – ohne jedes Mal das Rad neu zu erfinden.', 'Build individual onboarding journeys fast: With our Companion App you can easily and quickly create role- and person-specific onboarding journeys (30/60/90), customize and manage them — without reinventing the wheel every time.'),
-                    t('Ziele, Check-ins, Feedbackschleifen (Rhythmus + Gesprächsleitfäden)', 'Goals, check-ins, feedback loops (rhythm + conversation guides)'),
-                    t('Mentor:innen-Setup + Frühwarnsignale & Interventionen', 'Mentor setup + early warning signals & interventions'),
-                    t('Ergebnis: weniger Abbrüche, schnellere Integration, klarere Entwicklung von Tag 1.', 'Result: fewer dropouts, faster integration, clearer development from day 1.'),
+                    t('Talent-Onboarding (30/60/90 Tage) – mit Coaching & Companion App', 'Talent onboarding (30/60/90 days) — with Coaching & Companion App'),
+                    t('Onboarding Coaching im laufenden Prozess (Talent + Mentor:innen/Leads)', 'Onboarding coaching in the ongoing process (talent + mentors/leads)'),
+                    t('Companion App für schnelle, individuelle Journey-Setups pro Rolle/Person', 'Companion App for fast, individual journey setups per role/person'),
+                    t('Ziele, Check-ins, Feedback, Frühwarnsignale', 'Goals, check-ins, feedback, early warning signals'),
                     'Talent Culture',
                     t('Diagnose der Talent-Experience', 'Talent experience diagnosis'),
                     t('Micro-Rituale + Alignment in HR/Ausbildung/Führung', 'Micro-rituals + alignment in HR/training/leadership'),
@@ -247,6 +254,7 @@ const Companies = () => {
                   items: [
                     'Talent Development System',
                     t('Lernpfade, Entwicklungsarchitektur, Messlogik', 'Learning paths, development architecture, measurement logic'),
+                    t('individuelle Pathways statt Einheitsprogramm', 'Individual pathways instead of one-size-fits-all programs'),
                     'Talent Leadership Coaching & Consulting',
                     t('Coaching für Teamleads/Ausbilder:innen', 'Coaching for team leads/trainers'),
                     t('Sparring bei kritischen Fällen + Toolkits', 'Sparring on critical cases + toolkits'),
@@ -257,7 +265,7 @@ const Companies = () => {
                   title: t('Organisation zukunftsfähig machen (Transformation) — mit Thrive (Berlin)', 'Future-proof the Organization (Transformation) — with Thrive (Berlin)'),
                   items: [
                     t(
-                      'Hier geht es um den umfassenden Umbau zur Organisation, für die Top-Talente gern an den Start gehen und in der sie langfristig ihr Potenzial entfalten. Das umfasst Kultur, Führung, Entscheidungslogik und Zusammenarbeit – und schließt explizit die Option ein, sich jenseits klassischer Hierarchie in Richtung Self-Governance weiterzuentwickeln (z.B. nach Sociocracy 3.0 / „Living Organisations"), wenn eure Realität zeigt, dass Command-and-Control Talente kostet.',
+                      'Hier geht es um den umfassenden Umbau zur Organisation, für die Top-Talente gern an den Start gehen und in der sie langfristig ihr Potenzial entfalten. Das umfasst Kultur, Führung, Entscheidungslogik und Zusammenarbeit – und schließt explizit die Option ein, sich jenseits klassischer Hierarchie in Richtung Self-Governance weiterzuentwickeln (z.B. Sociocracy 3.0 / „Living Organisations"), wenn eure Realität zeigt, dass Command-and-Control Talente kostet.',
                       'This is about the comprehensive transformation into an organization where top talent happily gets started and unfolds their potential long-term. This includes culture, leadership, decision-making logic, and collaboration — and explicitly includes the option to evolve beyond classical hierarchy toward self-governance (e.g. Sociocracy 3.0 / "Living Organisations"), when your reality shows that command-and-control costs talent.'
                     ),
                   ],
@@ -283,8 +291,8 @@ const Companies = () => {
                       </p>
                       <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                         {t(
-                          'Ihr müsst nicht nur modern wirken – ihr müsst modern funktionieren. Und wenn ihr auf Social Media Sinn, Freiheit und Entwicklung zeigt, dann muss die Organisation genau das im Alltag verkörpern. Alles andere wird von Gen Z/Gen Alpha schneller entlarvt, als ihr neue Videos schneiden könnt.',
-                          'You don\'t just need to look modern — you need to function modern. And if you show purpose, freedom, and growth on social media, the organization must embody exactly that in daily work. Anything else gets exposed by Gen Z/Gen Alpha faster than you can cut new videos.'
+                          'Ihr müsst nicht nur modern wirken – ihr müsst modern funktionieren. Und wenn ihr auf Social Media Sinn, Freiheit und Entwicklung zeigt, dann muss die Organisation genau das im Alltag verkörpern.',
+                          'You don\'t just need to look modern — you need to function modern. And if you show purpose, freedom, and growth on social media, the organization must embody exactly that in daily work.'
                         )}
                       </p>
                     </div>
@@ -324,7 +332,7 @@ const Companies = () => {
                   time: t('4–6 Wochen', '4–6 weeks'),
                   items: [
                     t('Funnel/Matching/Schulformate + Employer-Profil', 'Funnel/matching/school formats + employer profile'),
-                    t('Onboarding-/Mentoring-Design (falls enthalten)', 'Onboarding/mentoring design (if included)'),
+                    t('Onboarding-/Mentoring-Design (inkl. Journey-Setup via Companion App, falls enthalten)', 'Onboarding/mentoring design (incl. journey setup via Companion App, if included)'),
                   ],
                 },
                 {
@@ -341,7 +349,8 @@ const Companies = () => {
                   title: t('Bindung & Entwicklung', 'Retention & Development'),
                   time: t('laufend', 'ongoing'),
                   items: [
-                    'Onboarding-Journey, Talent Culture, Leadership Enablement',
+                    t('Onboarding-Coaching, Talent Culture, Leadership Enablement', 'Onboarding coaching, talent culture, leadership enablement'),
+                    t('Lernpfade & Development-System', 'Learning paths & development system'),
                   ],
                 },
                 {
