@@ -362,13 +362,13 @@ const ForSchools = () => {
                   ],
                 },
               ].map((pkg, i) => (
-                <div key={i} className="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm card-hover">
-                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">{pkg.title}</h3>
-                  <p className="text-sm opacity-60 mb-4 leading-relaxed">{pkg.desc}</p>
+                <div key={i} className="p-6 rounded-2xl border border-white/15 bg-white/8 backdrop-blur-sm card-hover">
+                  <h3 className="font-heading text-lg font-bold text-white mb-2">{pkg.title}</h3>
+                  <p className="text-sm text-white/70 mb-4 leading-relaxed">{pkg.desc}</p>
                   <ul className="space-y-1.5">
                     {pkg.items.map((item, j) => (
-                      <li key={j} className="flex items-start gap-2 text-sm opacity-70 leading-relaxed">
-                        <span className="text-accent mt-0.5 flex-shrink-0">→</span>{item}
+                      <li key={j} className="flex items-start gap-2 text-sm text-white/80 leading-relaxed">
+                        <span className="text-accent-lime mt-0.5 flex-shrink-0">→</span>{item}
                       </li>
                     ))}
                   </ul>
