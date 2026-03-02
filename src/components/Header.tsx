@@ -14,7 +14,7 @@ const Header = () => {
     { path: '/schools', label: t('Für Schulen', 'For Schools') },
     { path: '/companies', label: t('Für Unternehmen', 'For Companies') },
     { path: '/about', label: t('Über uns', 'About') },
-    { path: '/manifesto', label: t('Manifest', 'Manifesto') },
+    { path: '/manifesto', label: t('Warum und Wofür', 'Why and What For') },
     { path: '/contact', label: t('Kontakt', 'Contact') },
   ];
 
