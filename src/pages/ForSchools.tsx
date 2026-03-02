@@ -131,11 +131,11 @@ const ForSchools = () => {
                   text: t('Struktur, Moderation, Materialien und Partnerarbeit kommen aus einer Hand', 'Structure, moderation, materials, and partner work come from a single source'),
                 },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/10 bg-white/5">
-                  <div className="w-2 h-2 rounded-full bg-accent flex-shrink-0 mt-2" />
+                <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-white/15 bg-white/8">
+                  <div className="w-2 h-2 rounded-full bg-accent-lime flex-shrink-0 mt-2" />
                   <p className="text-sm leading-relaxed">
-                    <span className="font-heading font-semibold text-foreground">{item.bold}</span>{' '}
-                    <span className="opacity-70">{item.text}</span>
+                    <span className="font-heading font-semibold text-white">{item.bold}</span>{' '}
+                    <span className="text-white/80">{item.text}</span>
                   </p>
                 </div>
               ))}
