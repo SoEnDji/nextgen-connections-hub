@@ -53,8 +53,8 @@ const Manifesto = () => {
               </p>
               <p>
                 {t(
-                  'Wir glauben, jeder Mensch ist einzigartig und besitzt ein einzigartiges, ungenutztes Potenzial.',
-                  'We believe every person is unique and possesses a unique, untapped potential.'
+                  'Wir glauben, jeder besitzt ein einzigartiges, ungenutztes Potenzial.',
+                  'We believe everyone possesses a unique, untapped potential.'
                 )}
               </p>
               <p>
