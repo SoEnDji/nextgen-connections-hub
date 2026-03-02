@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import ecosystemDiagram from '@/assets/ecosystem-diagram.png';
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
@@ -311,6 +312,17 @@ const NetworkPartners = () => {
                 )}
               </p>
             </div>
+          </motion.div>
+
+          <motion.div {...fadeUp} className="mt-16 flex justify-center">
+            <img
+              src={ecosystemDiagram}
+              alt={t(
+                '2Morrow Lab Ökosystem – Talent Plattform verbindet Eltern & Familien, Unternehmen, Vereine & Verbände sowie Netzwerkpartner & Talentfördernde',
+                '2Morrow Lab Ecosystem – Talent Platform connecting parents & families, companies, associations, and network partners'
+              )}
+              className="w-full max-w-4xl rounded-2xl"
+            />
           </motion.div>
         </div>
       </section>
