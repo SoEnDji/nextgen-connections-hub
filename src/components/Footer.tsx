@@ -36,6 +36,9 @@ const Footer = () => {
               <Link to="/companies" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
                 {t('Für Unternehmen', 'For Companies')}
               </Link>
+              <Link to="/netzwerkpartner" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
+                {t('Für Netzwerkpartner', 'For Network Partners')}
+              </Link>
               <Link to="/about" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
                 {t('Über uns', 'About')}
               </Link>
