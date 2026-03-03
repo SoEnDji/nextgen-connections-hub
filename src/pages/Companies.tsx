@@ -82,17 +82,17 @@ const Companies = () => {
               {t('Warum jetzt: Kulturclash, KI – und das Ende des Durchschnitts', 'Why now: Culture clash, AI — and the end of averages')}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
-              <p>{t(
-                'Viele Organisationen erleben keinen „Fachkräftemangel", sondern einen Attraktivitäts- und Kulturmismatch. Gen Z (und bald Gen Alpha) bewertet Arbeitgeber anders: weniger Titel, mehr Sinn; weniger „Befehl", mehr Beteiligung; weniger Hochglanz, mehr Echtheit.',
-                'Many organizations don\'t face a "skills shortage" — they face an attractiveness and culture mismatch. Gen Z (and soon Gen Alpha) evaluates employers differently: less titles, more purpose; less "command", more participation; less polish, more authenticity.'
+              <p className="whitespace-pre-line">{t(
+                'Viele Organisationen erleben keinen „Fachkräftemangel", sondern einen Attraktivitäts- und Kulturmismatch. Gen Z (und bald Gen Alpha) bewertet Arbeitgeber anders:\nweniger Titel, mehr Sinn;\nweniger „Befehl", mehr Vertrauen & Beteiligung;\nweniger Hochglanz, mehr Echtheit.',
+                'Many organizations don\'t face a "skills shortage" — they face an attractiveness and culture mismatch. Gen Z (and soon Gen Alpha) evaluates employers differently:\nless titles, more purpose;\nless "command", more trust & participation;\nless polish, more authenticity.'
               )}</p>
               <p>{t(
                 'Dazu kommt ein zweiter Treiber, der gerade unterschätzt wird: KI ersetzt überproportional genau jene Aufgaben, die traditionell Einstiegsrollen ausmachen – Recherche, Dokumentation, Standard-Analysen, Routine-Kommunikation, erste Entwürfe. Damit bricht die alte Logik „Junior = Fleißarbeit" weg. Wer jetzt gewinnt, baut Einstieg neu: begleitet, lernorientiert, wirksam – und gibt Talenten früher herausfordernde Aufgaben, weil KI Routinen abnimmt.',
                 'There\'s a second driver being underestimated right now: AI is disproportionately replacing exactly the tasks that traditionally define entry-level roles — research, documentation, standard analyses, routine communication, first drafts. This breaks the old logic of "junior = grunt work." Those who win now rebuild entry: guided, learning-oriented, impactful — and give talent challenging tasks earlier, because AI takes over routines.'
               )}</p>
               <p>{t(
-                'Und darunter liegt die Grundfrage, die viele Prozesse entlarvt: Averagarianism – Talente über Durchschnitt, Rankings und Standardpfade zu „verstehen". Das funktioniert schlecht, weil niemand „average" ist. Talent ist mehrdimensional, kontextabhängig und entwickelt sich entlang unterschiedlicher Wege. Genau deshalb bauen wir Einstiege und Entwicklung als Equal-Fit-Partnerschaft: passgenau statt standardisiert.',
-                'And underneath lies the fundamental question that exposes many processes: Averagarianism — trying to "understand" talent through averages, rankings, and standardized paths. This works poorly because nobody is "average." Talent is multidimensional, context-dependent, and develops along different paths. That\'s exactly why we build entry and development as an equal-fit partnership: tailored instead of standardized.'
+                'Und darunter liegt die Grundfrage, die viele Prozesse entlarvt: der Versuch, Talente über Durchschnittswerte, Rankings und Standardpfade zu „verstehen". Das funktioniert schlecht, weil niemand dem Durchschnitt entspricht. Talent ist mehrdimensional, kontextabhängig und entwickelt sich entlang unterschiedlicher Wege. Genau deshalb bauen wir Einstiege und Entwicklung als Equal-Fit-Partnerschaft: passgenau statt standardisiert.',
+                'And underneath lies the fundamental question that exposes many processes: the attempt to "understand" talent through averages, rankings, and standardized paths. This works poorly because nobody matches the average. Talent is multidimensional, context-dependent, and develops along different paths. That\'s exactly why we build entry and development as an equal-fit partnership: tailored instead of standardized.'
               )}</p>
             </div>
             <div className="p-6 rounded-2xl border border-accent/20 bg-accent/5">
