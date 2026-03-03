@@ -213,7 +213,7 @@ const NetworkPartners = () => {
               className="text-lg md:text-xl max-w-2xl leading-relaxed mb-8 text-secondary"
             >
               {t(
-                '2Morrow Lab verbindet engagierte Akteure und ihre Angebote mit Talenten in Übergangsphasen. Kernstück ist unsere Plattform mit dem Marktplatz der Möglichkeiten: die kuratierte Schnittstelle zwischen Angeboten und jungen Menschen auf dem Weg ins Leben.',
+                '2Morrow Lab verbindet engagierte Akteure und ihre Angebote mit Talenten in Übergangsphasen. Kernstück ist unsere Plattform mit dem Marktplatz der Möglichkeiten: die kuratierte Schnittstelle zwischen Angeboten und jungen Menschen für gelungene Übergange zwischen Lebensabschnitten.',
                 '2Morrow Lab connects committed actors and their offers with talents in transition. At the core is our platform with the Marketplace of Opportunities: the curated interface between offers and young people on their way into life.'
               )}
             </motion.p>
