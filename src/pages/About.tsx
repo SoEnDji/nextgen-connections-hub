@@ -118,21 +118,29 @@ const About = () => {
                 </p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>{t(
-                      'Dr. Sohrab Noorsalehi-Garakani arbeitet als Leadership Coach und Trainer. Er begleitet Führungskräfte und Teams dabei, in komplexen Situationen Orientierung zu gewinnen und handlungsfähig zu bleiben.',
-                      'Dr. Sohrab Noorsalehi-Garakani works as a leadership coach and trainer. He supports leaders and teams in staying oriented and effective in complex, fast-changing environments.'
+                      'Mein name Sohrab  "So" und für viele Menschen wirke oft klar und strukturiert. Aber das kommt auch daher, dass ich Unsicherheit gut kenne. Viele meiner wichtigsten Lernschritte kamen nicht aus Erfolgen, sondern aus Umwegen, Fehlannahmen und Momenten, in denen ich mich neu sortieren musste.',
+                      'My name is Sohrab "So" and to many people I often seem clear and structured. But that also comes from knowing uncertainty well. Many of my most important learning steps came not from successes, but from detours, wrong assumptions, and moments where I had to reorient myself.'
                     )}</p>
                   <p>{t(
-                      'Im Zentrum seiner Arbeit stehen Selbstführung, Teamdynamik und die Frage, wie Verantwortung in Zeiten von Unsicherheit bewusst übernommen werden kann.',
-                      'His work focuses on self-leadership, team dynamics, and how responsibility can be consciously embraced in times of uncertainty.'
+                      'In über 15 Jahren in Wissenschaft, Bildung und Wirtschaft habe ich gesehen, wie schnell Menschen in leistungsstarken Umfeldern anfangen zu funktionieren – statt zu gestalten. Und wie sehr Orientierung leidet, wenn niemand hilft, die wichtigen Fragen auszuhalten: Was ist mir wichtig? Wer will ich werden? Was ist der nächste echte Schritt?',
+                      'In over 15 years in science, education, and business, I have seen how quickly people in high-performance environments start to function — instead of creating. And how much orientation suffers when no one helps to sit with the important questions: What matters to me? Who do I want to become? What is the next real step?'
                     )}</p>
                   <p>{t(
-                      'Basketball ist für ihn mehr als ein Sport. Er glaubt, dass man über Teamgeist, Verantwortung und das Wiederaufstehen nach Rückschlägen viel über Führung lernen kann.',
-                      'For him, basketball represents more than a sport. It reflects teamwork, decision-making under pressure, and the ability to get back up after setbacks.'
+                      '2Morrow Lab baue ich, weil junge Menschen an Übergängen nicht noch mehr „Ratgeber" brauchen, sondern eine tragfähige Infrastruktur, Ermutigung und kontinuierliche, individuelle Begleitung: Life Design als Praxis, eine KI als Begleiter (nicht als Ersatz), und echte Entwicklungspartnerschaften mit Menschen, die mitgehen.',
+                      'I am building 2Morrow Lab because young people at transitions don\'t need more "advisors" — they need sustainable infrastructure, encouragement, and continuous, individual support: Life Design as practice, an AI as companion (not replacement), and real development partnerships with people who walk alongside them.'
                     )}</p>
-                  <p className="text-foreground font-heading font-semibold">{t(
-                      'Er ist überzeugt: Resilienz entsteht nicht durch Druck, sondern durch Beziehung, Klarheit und Verantwortung.',
-                      'His core belief: resilience grows from clarity, relationships, and responsibility.'
-                    )}</p>
+                </div>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  {[
+                    { text: t('Mutig und bescheiden handeln', 'Act with courage and humility'), color: 'bg-accent/15 text-accent border-accent/30' },
+                    { text: t('Neugieriges und offenes Lernen und Erkunden', 'Curious and open learning and exploring'), color: 'bg-accent-magenta/15 text-accent-magenta border-accent-magenta/30' },
+                    { text: t('Dankbarer, wertschätzender und ehrlicher Umgang', 'Grateful, appreciative and honest interaction'), color: 'bg-accent/15 text-accent border-accent/30' },
+                    { text: t('Gesundheit & Vitalität stärken', 'Strengthen health & vitality'), color: 'bg-accent-magenta/15 text-accent-magenta border-accent-magenta/30' },
+                  ].map((val, i) => (
+                    <span key={i} className={`inline-block px-4 py-2 rounded-full text-sm font-heading font-semibold border ${val.color}`}>
+                      {val.text}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
