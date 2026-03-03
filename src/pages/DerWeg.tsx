@@ -467,6 +467,24 @@ const DerWeg = () => {
           </motion.ul>
         </div>
       </section>
+
+      {/* CTA bottom */}
+      <section className="py-20 md:py-28 bg-background">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <motion.h2 {...fade} className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-8">
+            {t('Bereit für deinen nächsten ersten Schritt?', 'Ready for your next first step?')}
+          </motion.h2>
+          <motion.div {...fade}>
+            <Link
+              to="/booking"
+              className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-10 py-4 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200"
+            >
+              {t('Early Access sichern', 'Get Early Access')}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
     </Layout>
   );
 };
