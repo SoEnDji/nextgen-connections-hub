@@ -32,64 +32,32 @@ const About = () => {
               {t('Über uns', 'About')}
             </div>
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-text-hero leading-[1.1] text-balance glow-text">
-              {t('Warum es 2Morrow Lab gibt', 'Why 2Morrow Lab exists')}
+              {t('Die Menschen hinter 2Morrow Lab', 'The People Behind 2Morrow Lab')}
             </h1>
           </motion.div>
         </div>
       </section>
 
-      {/* WHY — narrative block */}
+      {/* INTRO — narrative block */}
       <section className="py-20 md:py-28 bg-background">
         <div className="max-w-3xl mx-auto px-6">
-          <motion.div {...fadeUp} className="space-y-8">
-            <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
-              <p>{t(
-                  'Junge Menschen wachsen in einer Welt auf, in der sich Rahmenbedingungen schneller verändern, als man sie planen kann.',
-                  'Young people are growing up in a world where conditions shift faster than anyone can plan for.'
-                )}</p>
-              <p>{t(
-                  'Gleichzeitig wird von ihnen erwartet, früh klar zu sein. Sich festzulegen. Sich zu entscheiden.',
-                  "At the same time, they are expected to have it figured out. To commit. To decide."
-                )}</p>
-            </div>
-            <blockquote className="border-l-4 border-accent pl-6 py-2">
-              <p className="text-xl md:text-2xl text-foreground font-heading font-bold leading-snug">{t(
-                  'Orientierung entsteht nicht durch Druck. Sondern durch Selbstkenntnis, Erfahrung und tragfähige Beziehungen.',
-                  "Orientation doesn't come from pressure. It comes from self-knowledge, experience, and meaningful relationships."
-                )}</p>
-            </blockquote>
-            <p className="text-lg text-muted-foreground leading-relaxed">{t(
-                'Diese Haltung prägt nicht nur unsere Arbeit. Sie prägt auch uns.',
-                "This mindset doesn't just shape our work. It shapes us."
+          <motion.div {...fadeUp} className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p>{t(
+                'Wir kennen Schule und Lebensrealität nicht nur aus Konzeptpapieren. Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen – mitten in hohen sozialen und strukturellen Anforderungen.',
+                "We don't know school and real life from concept papers alone. As Teach First Deutschland fellows, we spent two years at high-challenge schools — right in the middle of intense social and structural demands."
               )}</p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* OUR EXPERIENCE */}
-      <section className="section-dark noise-overlay py-20 md:py-28">
-        <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <motion.div {...fadeUp} className="space-y-8">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold glow-text">
-              {t('Unsere Erfahrung', 'Our Experience')}
-            </h2>
-            <div className="space-y-6 text-lg text-white/60 leading-relaxed">
-              <p>{t(
-                  'Schule kennen wir nicht nur aus Konzeptpapieren.',
-                  "We don't know school from concept papers alone."
-                )}</p>
-              <p>{t(
-                  'Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen tätig – in einem Umfeld mit hohen sozialen und strukturellen Anforderungen.',
-                  "As Teach First Deutschland fellows, we spent two years at high-challenge schools — in environments with intense social and structural demands."
-                )}</p>
-              <p>{t(
-                  'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Fragen von Selbstführung, Leadership und Zukunftsgestaltung.',
-                  'Today, we work with young people, schools, and organizations on questions of self-leadership, leadership development, and shaping the future.'
-                )}</p>
-            </div>
-            <p className="font-heading font-semibold text-white text-xl">
-              {t('2Morrow Lab verbindet beide Welten.', '2Morrow Lab connects both worlds.')}
-            </p>
+            <p>{t(
+                'Daraus ist unsere Kernüberzeugung entstanden: Orientierung entsteht nicht durch Druck, sondern durch Selbstkenntnis, Erfahrung und tragfähige Beziehungen.',
+                "From this, our core conviction emerged: orientation doesn't come from pressure, but from self-knowledge, experience, and meaningful relationships."
+              )}</p>
+            <p>{t(
+                'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Selbstführung, Leadership und Zukunftsgestaltung – gerade weil sich die Welt schneller verändert, als man sie planen kann.',
+                'Today, we work with young people, schools, and organizations on self-leadership, leadership development, and shaping the future — precisely because the world is changing faster than anyone can plan for.'
+              )}</p>
+            <p className="font-heading font-semibold text-foreground text-xl">{t(
+                '2Morrow Lab verbindet diese Praxis mit einem zukunftsfähigen Ansatz.',
+                '2Morrow Lab connects this practice with a future-ready approach.'
+              )}</p>
           </motion.div>
         </div>
       </section>
@@ -230,9 +198,9 @@ const About = () => {
 
             {/* Partners */}
             <div className="pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-5 uppercase tracking-wider font-heading">
-                {t('Partner', 'Partners')}
-              </p>
+              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-5">
+                {t('Unsere Partner', 'Our Partners')}
+              </h3>
               <div className="flex flex-wrap gap-4 items-center">
                 <div className="px-5 py-2.5 rounded-lg border border-border text-sm font-heading font-semibold text-muted-foreground">
                   Sportschule Potsdam
