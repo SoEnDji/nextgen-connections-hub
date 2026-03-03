@@ -51,8 +51,8 @@ const HeroSection = () => {
             className="text-lg md:text-xl max-w-md leading-relaxed mb-10 text-secondary">
 
             {t(
-              'Dein Leben ist ein Designprojekt, das gestaltet werden will, kein Rätsel, das gelöst werden muss. 2Morrow Lab hilft dir herauszufinden, was dich wirklich lebendig macht und wie du leben möchtest, um dann daraus deine Zukunft zu bauen.',
-              "Your life isn't a puzzle to be solved. It's a design project waiting to be shaped. 2Morrow Lab helps you discover what truly makes you come alive and how you want to live — then build your future from it."
+              'Dein Leben ist ein Designprojekt. Kein Rätsel, das gelöst werden muss.\n2Morrow Lab hilft dir herauszufinden, was dich wirklich lebendig macht und wie du leben möchtest, um dann daraus deine Zukunft zu bauen.',
+              "Your life is a design project. Not a puzzle to be solved.\n2Morrow Lab helps you discover what truly makes you come alive and how you want to live — then build your future from it."
             )}
           </motion.p>
 
