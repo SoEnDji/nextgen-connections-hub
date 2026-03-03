@@ -54,11 +54,11 @@ const Companies = () => {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
-                  to="/contact"
+                  to="/booking"
                   className="inline-flex items-center gap-2 border border-white/25 text-text-hero px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-white/10 transition-all duration-300"
                 >
                   <Calendar className="w-4 h-4" />
-                  {t('20-Min-Kennenlerncall buchen', 'Book a 20-min intro call')}
+                  {t('30-Min-Kennenlerncall buchen', 'Book a 30-min intro call')}
                 </Link>
               </div>
             </motion.div>
@@ -427,11 +427,11 @@ const Companies = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                to="/contact"
+                to="/booking"
                 className="inline-flex items-center gap-2 border border-white/25 text-text-hero px-8 py-4 rounded-lg font-heading font-semibold hover:bg-white/10 transition-all duration-300"
               >
                 <Calendar className="w-4 h-4" />
-                {t('20-Min-Kennenlerncall buchen', 'Book a 20-min intro call')}
+                {t('30-Min-Kennenlerncall buchen', 'Book a 30-min intro call')}
               </Link>
             </div>
           </motion.div>
