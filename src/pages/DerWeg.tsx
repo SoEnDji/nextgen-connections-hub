@@ -290,20 +290,14 @@ const DerWeg = () => {
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">
               <p>
                 {t(
-                  'An drei Zeitpunkten (Start, Mitte, Ende) beantwortest du kurze, situative Fragen. Keine Likert-Skalen — echte Reflexionsfragen: „Denk an die letzte wichtige Entscheidung. Wie hat sie sich angefühlt?"',
-                  'At three points (start, middle, end) you answer short, situational questions. No Likert scales — real reflection questions: "Think about the last important decision. How did it feel?"'
+                  'An drei Punkten auf deiner Reise stellst du dir ehrliche Fragen. Keine Ankreuz-Felder, keine Skalen von 1 bis 10. Sondern Fragen, die wirklich etwas zeigen: „Denk an die letzte wichtige Entscheidung. Wie hat sie sich angefühlt?"',
+                  'At three points on your journey, you ask yourself honest questions. No checkboxes, no scales from 1 to 10. But questions that truly reveal something: "Think about the last important decision. How did it feel?"'
                 )}
               </p>
               <p>
                 {t(
-                  'Dein Profil zeigt dir fünf Linien über Zeit — wie ein Equalizer, nicht wie ein Thermometer. Dazu deine eigenen Worte von damals vs. heute.',
-                  'Your profile shows you five lines over time — like an equalizer, not a thermometer. Plus your own words from then vs. now.'
-                )}
-              </p>
-              <p className="text-accent-electric italic">
-                {t(
-                  'Später: Dein Companion sagt: „Du bist jetzt 8 Wochen dabei. Wollen wir schauen, was sich verändert hat?"',
-                  'Later: Your Companion says: "You\'ve been at it for 8 weeks now. Shall we look at what has changed?"'
+                  'Dein Profil zeigt dir fünf Bereiche, die sich unabhängig voneinander entwickeln. Wie ein Equalizer, bei dem jeder Regler seinen eigenen Weg geht. Dazu siehst du deine eigenen Worte von damals neben denen von heute. Das ist ehrlicher als jede Zahl.',
+                  'Your profile shows you five areas that develop independently. Like an equalizer where each slider goes its own way. Plus you see your own words from back then alongside today\'s. That\'s more honest than any number.'
                 )}
               </p>
             </div>
