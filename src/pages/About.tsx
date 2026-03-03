@@ -173,28 +173,6 @@ const About = () => {
                 )}</p>
             </div>
 
-            <div className="pt-4">
-              <p className="font-heading font-semibold text-foreground mb-6 text-lg">
-                {t('Unsere Arbeit verbindet:', 'Our work connects:')}
-              </p>
-              <ul className="space-y-3">
-                {[
-                'Life Design Thinking',
-                'Adaptive Leadership',
-                t('Entwicklungspartnerschaften', 'Development Partnerships'),
-                t('Schule als Ökosystem', 'School as Ecosystem')].
-                map((item, i) =>
-                <li key={i} className="flex items-start gap-3 text-muted-foreground">
-                    <ArrowRight className="w-4 h-4 mt-1 text-accent flex-shrink-0" />
-                    <span className="font-heading font-semibold text-foreground">{item}</span>
-                  </li>
-                )}
-              </ul>
-            </div>
-
-            <p className="text-xl text-foreground font-heading font-semibold pt-4">
-              {t('Nicht als Theorie. Sondern als Praxis.', 'Not as theory. As practice.')}
-            </p>
 
             {/* Partners */}
             <div className="pt-8 border-t border-border">
