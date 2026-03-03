@@ -125,7 +125,7 @@ const About = () => {
               <div className="md:col-span-2 space-y-5">
                 <h3 className="font-heading text-2xl font-bold text-foreground">Vera Plümer</h3>
                 <p className="text-sm font-heading font-semibold text-accent-magenta uppercase tracking-wider">
-                  Life Design Coach
+                  CO-FOUNDER & LIFE DESIGN COACH
                 </p>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>{t(
