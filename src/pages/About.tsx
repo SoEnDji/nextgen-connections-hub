@@ -43,16 +43,16 @@ const About = () => {
         <div className="max-w-3xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             <p>{t(
-                'Wir kennen Schule und Lebensrealität nicht nur aus Konzeptpapieren. Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen – mitten in hohen sozialen und strukturellen Anforderungen.',
-                "We don't know school and real life from concept papers alone. As Teach First Deutschland fellows, we spent two years at high-challenge schools — right in the middle of intense social and structural demands."
+                'Wir kennen Schule und Lebensrealität junger Menschen nicht nur aus Studien und Konzeptpapieren. Als Fellows bei Teach First Deutschland waren wir zwei Jahre an herausfordernden Schulen, mitten in hohen sozialen und strukturellen Anforderungen.',
+                "We know school and the reality of young people's lives not just from studies and concept papers. As Teach First Deutschland fellows, we spent two years at high-challenge schools, right in the middle of intense social and structural demands."
               )}</p>
             <p>{t(
                 'Daraus ist unsere Kernüberzeugung entstanden: Orientierung entsteht nicht durch Druck, sondern durch Selbstkenntnis, Erfahrung und tragfähige Beziehungen.',
                 "From this, our core conviction emerged: orientation doesn't come from pressure, but from self-knowledge, experience, and meaningful relationships."
               )}</p>
             <p>{t(
-                'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Selbstführung, Leadership und Zukunftsgestaltung – gerade weil sich die Welt schneller verändert, als man sie planen kann.',
-                'Today, we work with young people, schools, and organizations on self-leadership, leadership development, and shaping the future — precisely because the world is changing faster than anyone can plan for.'
+                'Heute arbeiten wir mit jungen Menschen, Schulen und Organisationen an Selbstführung, Leadership und Zukunftsgestaltung, gerade auch, weil sich die Welt schneller verändert, als man sie planen kann.',
+                'Today, we work with young people, schools, and organizations on self-leadership, leadership development, and shaping the future, especially because the world is changing faster than anyone can plan for.'
               )}</p>
             <p className="font-heading font-semibold text-foreground text-xl">{t(
                 '2Morrow Lab verbindet diese Praxis mit einem zukunftsfähigen Ansatz.',
