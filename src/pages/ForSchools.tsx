@@ -465,7 +465,7 @@ const ForSchools = () => {
                 {t('Zukunftstag planen', 'Plan a Future Day')}
               </Link>
               <Link
-                to="/contact"
+                to="/booking"
                 className="inline-flex items-center gap-2 border border-white/25 text-text-hero px-8 py-4 rounded-lg font-heading font-semibold hover:bg-white/10 transition-all duration-300"
               >
                 <Rocket className="w-4 h-4" />
