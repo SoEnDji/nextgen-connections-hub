@@ -164,7 +164,7 @@ const Companies = () => {
             {/* Drei Prinzipien */}
             <div>
               <h3 className="font-heading font-semibold text-lg mb-4 text-white/90">
-                {t('Drei Prinzipien gegen Averagarianism (und für echte Passung):', 'Three principles against Averagarianism (and for real fit):')}
+                {t('Drei Prinzipien gegen Durchschnittsdenken und für echte Passung:', 'Three principles against average thinking and for real fit:')}
               </h3>
               <div className="space-y-3">
                 {[
