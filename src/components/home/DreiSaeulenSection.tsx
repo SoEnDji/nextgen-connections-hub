@@ -1,6 +1,8 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 const fade = {
   initial: { opacity: 0, y: 30 },
@@ -17,24 +19,24 @@ const DreiSaeulenSection = () => {
       num: '①',
       title: t('Erkenne, was dich lebendig macht', 'Discover what makes you come alive'),
       body: t(
-        'Deine Werte. Deine Neugier. Die Momente, in denen du die Zeit vergisst. Dein Kompass: was du über Arbeit glaubst, was du über das Leben glaubst, und die Werte, die für dich nicht verhandelbar sind.',
-        'Your values. Your curiosity. The moments when you lose track of time. Your compass: what you believe about work, what you believe about life, and the values that are non-negotiable for you.'
+        'Dein Kompass: was du über Arbeit glaubst, was du über das Leben glaubst, und die Werte, die für dich nicht verhandelbar sind.',
+        'Your compass: what you believe about work, what you believe about life, and the values that are non-negotiable for you.'
       ),
     },
     {
       num: '②',
       title: t('Baue Prototypen statt Pläne', 'Build prototypes, not plans'),
       body: t(
-        'Du kannst dir 7 verschiedene Leben vorstellen. Also hör auf, das eine richtige auszuwählen. Probier sie aus. Ein Prototyp, der scheitert, bringt dir mehr als ein Plan, der nie startet.',
-        "You can imagine 7 different lives. So stop trying to pick the right one. Try them out. A prototype that fails teaches you more than a plan that never starts."
+        'Du kannst dir 7 verschiedene Leben vorstellen. Probier sie aus. Ein Prototyp, der scheitert, bringt dir mehr als ein Plan, der nie startet.',
+        "You can imagine 7 different lives. Try them out. A prototype that fails teaches you more than a plan that never starts."
       ),
     },
     {
       num: '③',
       title: t('Wachse mit Menschen, die es ernst meinen', 'Grow with people who mean it'),
       body: t(
-        'Der größte Unterschied in Übergangsphasen machen nicht Tools. Es sind die richtigen Menschen. Eine Gemeinschaft, die gemeinsam erkundet, experimentiert und reflektiert.',
-        "The biggest difference in transitions isn't tools. It's the right people. A community that explores, experiments, and reflects together."
+        'Der größte Unterschied in Übergangsphasen machen die richtigen Menschen. Eine Gemeinschaft, die gemeinsam erkundet und reflektiert.',
+        "The biggest difference in transitions is the right people. A community that explores and reflects together."
       ),
     },
   ];
@@ -72,45 +74,67 @@ const DreiSaeulenSection = () => {
           ))}
         </div>
 
-        {/* Step 4 — AI Companion (visually distinct) */}
+        {/* Step 4 — Sieh, wie du wächst */}
         <motion.div
           {...fade}
           transition={{ duration: 0.5, delay: 0.35 }}
+          className="mt-14"
+        >
+          <div className="flex items-baseline gap-3 mb-2">
+            <span className="text-accent font-heading font-bold text-lg">④</span>
+            <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground leading-tight">
+              {t('Sieh, wie du wächst', 'See how you grow')}
+            </h3>
+          </div>
+          <p className="text-muted-foreground text-base leading-relaxed pl-9">
+            {t(
+              'Dein Handlungskraft-Profil zeigt dir, was sich verändert. Nicht als Score, der dich bewertet — als Spiegel, der deine Entwicklung sichtbar macht. Fünf Dimensionen, die dir zeigen, wo du gerade stehst und wo du hinwillst.',
+              "Your agency profile shows you what's changing. Not as a score that judges you — as a mirror that makes your growth visible. Five dimensions that show you where you stand and where you want to go."
+            )}
+          </p>
+        </motion.div>
+
+        {/* Testimonial quote */}
+        <motion.blockquote
+          {...fade}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-14 rounded-2xl border border-accent/20 bg-accent/5 p-8"
+        >
+          <p className="text-foreground italic text-base leading-relaxed mb-3">
+            {t(
+              '„Als ich angefangen habe, habe ich geschrieben: ‚Ich weiß überhaupt nicht, was ich will.‛ Acht Wochen später habe ich drei Kompass-Werte, zwei Prototypen und meinen ersten Pod. Ich hätte das nie für möglich gehalten."',
+              '"When I started, I wrote: \'I have no idea what I want.\' Eight weeks later I have three compass values, two prototypes, and my first pod. I never thought that was possible."'
+            )}
+          </p>
+          <footer className="text-muted-foreground text-sm">
+            {t('— So kann sich dein Rückblick anfühlen.', '— This is what your reflection could feel like.')}
+          </footer>
+        </motion.blockquote>
+
+        {/* Step 5 — AI Companion */}
+        <motion.div
+          {...fade}
+          transition={{ duration: 0.5, delay: 0.45 }}
           className="mt-14 rounded-2xl border border-accent-electric/20 bg-accent-electric/5 p-8 md:p-10"
         >
           <div className="flex items-baseline gap-3 mb-2">
-            <span className="text-accent-electric font-heading font-bold text-lg">④</span>
+            <span className="text-accent-electric font-heading font-bold text-lg">⑤</span>
             <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground leading-tight">
               {t('Ein Begleiter, der mit dir wächst', 'A companion that grows with you')}
             </h3>
           </div>
-
-          <div className="pl-9 space-y-4 text-base leading-relaxed">
-            <p className="text-foreground font-semibold">
-              {t(
-                'Wir bauen gerade etwas, das es so noch nicht gibt:',
-                "We're building something that doesn't exist yet:"
-              )}{' '}
-              <span className="font-normal text-muted-foreground">
-                {t(
-                  'einen AI-Begleiter, der deine Muster erkennt, die richtigen Fragen stellt und mit dir wächst. Kein Chatbot mit generischen Tipps — ein Reflexionspartner, der deinen Kompass kennt und dein Tempo respektiert.',
-                  "an AI companion that recognizes your patterns, asks the right questions, and grows with you. Not a chatbot with generic tips — a reflection partner that knows your compass and respects your pace."
-                )}
-              </span>
-            </p>
-            <p className="text-muted-foreground">
-              {t(
-                'Bis er fertig ist, starten wir mit dem, was kein AI ersetzen kann: echte Menschen, echte Fragen, echte Experimente. Der Kompass, die Micro-Practices, die Programme — alles funktioniert jetzt schon. Der Companion wird sie verbinden und noch besser machen.',
-                "Until it's ready, we start with what no AI can replace: real people, real questions, real experiments. The compass, the micro-practices, the programs — everything works already. The companion will connect them and make them even better."
-              )}
-            </p>
-          </div>
+          <p className="text-muted-foreground text-base leading-relaxed pl-9">
+            {t(
+              'Wir bauen einen AI-Begleiter, der deine Muster erkennt, die richtigen Fragen stellt und mit dir wächst. Bis er fertig ist, starten wir mit dem, was kein AI ersetzen kann: echte Menschen, echte Fragen, echte Experimente.',
+              "We're building an AI companion that recognizes your patterns, asks the right questions, and grows with you. Until it's ready, we start with what no AI can replace: real people, real questions, real experiments."
+            )}
+          </p>
         </motion.div>
 
         {/* Reflection prompt */}
         <motion.div
           {...fade}
-          transition={{ duration: 0.5, delay: 0.45 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-16 rounded-2xl border border-accent/20 bg-accent/5 p-8"
         >
           <p className="font-heading font-bold text-foreground mb-2">
@@ -128,6 +152,15 @@ const DreiSaeulenSection = () => {
             placeholder={t('Schreib hier...', 'Write here...')}
             className="w-full rounded-xl border border-border bg-background px-4 py-3 text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/30 resize-none min-h-[80px]"
           />
+          <div className="mt-4">
+            <Link
+              to="/programs"
+              className="inline-flex items-center gap-2 bg-accent-lime text-foreground font-heading font-bold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+            >
+              {t('Early Access sichern', 'Get Early Access')}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>
