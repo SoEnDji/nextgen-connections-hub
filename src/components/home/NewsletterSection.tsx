@@ -17,15 +17,15 @@ const NewsletterSection = () => {
     <section className="py-24 md:py-36 bg-foreground">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <motion.div {...fade} className="space-y-8">
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.08]">
+          <span className="font-heading text-xs font-bold tracking-[0.25em] uppercase text-white/50">
             {t('Dein nächster Schritt', 'Your Next Step')}
-          </h2>
-          <p className="text-xl text-white/70 leading-relaxed">
+          </span>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.08]">
             {t(
               'Es gibt nicht den einen richtigen Weg. Aber es gibt deinen nächsten Schritt. Und der beginnt hier.',
               "There's no single right path. But there is your next step. And it starts here."
             )}
-          </p>
+          </h2>
           <div className="pt-4">
             <Link
               to="/programs"
