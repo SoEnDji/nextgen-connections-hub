@@ -94,22 +94,7 @@ const DreiSaeulenSection = () => {
           </p>
         </motion.div>
 
-        {/* Testimonial quote */}
-        <motion.blockquote
-          {...fade}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-14 rounded-2xl border border-accent/20 bg-accent/5 p-8"
-        >
-          <p className="text-foreground italic text-base leading-relaxed mb-3">
-            {t(
-              '„Als ich angefangen habe, habe ich geschrieben: ‚Ich weiß überhaupt nicht, was ich will.‛ Acht Wochen später habe ich drei Kompass-Werte, zwei Prototypen und meinen ersten Pod. Ich hätte das nie für möglich gehalten."',
-              '"When I started, I wrote: \'I have no idea what I want.\' Eight weeks later I have three compass values, two prototypes, and my first pod. I never thought that was possible."'
-            )}
-          </p>
-          <footer className="text-muted-foreground text-sm">
-            {t('— So kann sich dein Rückblick anfühlen.', '— This is what your reflection could feel like.')}
-          </footer>
-        </motion.blockquote>
+
 
         {/* Step 5 — AI Companion */}
         <motion.div
