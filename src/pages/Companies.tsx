@@ -213,7 +213,7 @@ const Companies = () => {
           {/* Leistungen */}
           <motion.div {...fadeUp} className="mt-12 space-y-6">
             <h3 className="font-heading text-2xl font-bold text-foreground">
-              {t('Unsere vier Wirkungsfelder:', 'Our four areas of impact:')}
+              {t('Unsere Angebot für Talentsuchende:', 'Our offer for talent seekers:')}
             </h3>
             <div className="grid md:grid-cols-2 gap-5">
               {[
