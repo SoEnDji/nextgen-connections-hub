@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, MessageCircle } from 'lucide-react';
 import Layout from '@/components/Layout';
 import effizienzPrinzip from '@/assets/effizienz-prinzip.png';
 import lifeDesignPrinzip from '@/assets/life-design-prinzip.png';
@@ -343,6 +343,34 @@ const DerWeg = () => {
                 {t('Early Access sichern', 'Get Early Access')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
+            </div>
+
+            {/* Social Media Section */}
+            <div className="pt-12 flex flex-col items-center gap-6">
+              <p className="text-sm md:text-base text-white/70 leading-relaxed">
+                {t(
+                  'Keine Lust auf Newsletter oder Guidbook? Dann folge uns bei Insta oder abboniere unseren WhatsApp Channel',
+                  "Not interested in the newsletter or guidebook? Follow us on Instagram or subscribe to our WhatsApp Channel"
+                )}
+              </p>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.instagram.com/2morrow_lab/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-lime text-foreground hover:scale-110 transition-transform duration-200 shadow-lg"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-7 h-7" />
+                </a>
+                <a
+                  href="#"
+                  className="group inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-lime text-foreground hover:scale-110 transition-transform duration-200 shadow-lg"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="w-7 h-7" />
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
