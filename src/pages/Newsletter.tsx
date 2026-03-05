@@ -42,87 +42,16 @@ const Newsletter = () => {
 
       {/* Form Section */}
       <section className="py-20 md:py-28 bg-background">
-        <div className="max-w-xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-6">
           <motion.div {...fadeUp}>
-            {status === 'success' ? (
-              <div className="text-center space-y-6 p-10 rounded-2xl bg-card border border-border">
-                <CheckCircle className="w-12 h-12 text-accent-lime mx-auto" />
-                <h2 className="font-heading text-2xl font-bold text-foreground">
-                  {t('Du bist dabei!', "You're in!")}
-                </h2>
-                <p className="text-muted-foreground">
-                  {t(
-                    'Danke für deine Anmeldung. Wir melden uns bald bei dir.',
-                    'Thanks for subscribing. We\'ll be in touch soon.'
-                  )}
-                </p>
-              </div>
-            ) : (
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="space-y-6 p-8 md:p-10 rounded-2xl bg-card border border-border"
-              >
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-foreground" htmlFor="newsletter-email">
-                    {t('E-Mail-Adresse', 'Email address')}
-                  </label>
-                  <input
-                    id="newsletter-email"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder={t('deine@email.de', 'your@email.com')}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-                  />
-                </div>
-
-                <label className="flex items-start gap-3 cursor-pointer group">
-                  <input
-                    type="checkbox"
-                    checked={optIn}
-                    onChange={(e) => setOptIn(e.target.checked)}
-                    required
-                    className="mt-1 w-4 h-4 rounded border-border accent-accent"
-                  />
-                  <span className="text-sm text-muted-foreground leading-relaxed">
-                    {t(
-                      'Ich stimme dem Erhalt des Newsletters zu und akzeptiere die Datenschutzerklärung. Du kannst dich jederzeit über den Link im Newsletter abmelden.',
-                      'I agree to receive the newsletter and accept the data privacy statement. You may unsubscribe at any time using the link in our newsletter.'
-                    )}
-                  </span>
-                </label>
-
-                {status === 'error' && (
-                  <div className="flex items-center gap-2 text-destructive text-sm">
-                    <AlertCircle className="w-4 h-4" />
-                    {t(
-                      'Etwas ist schiefgelaufen. Bitte versuche es erneut.',
-                      'Something went wrong. Please try again.'
-                    )}
-                  </div>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={status === 'loading' || !email || !optIn}
-                  className="w-full group inline-flex items-center justify-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200 disabled:opacity-50 disabled:hover:scale-100"
-                >
-                  {status === 'loading'
-                    ? t('Wird gesendet...', 'Submitting...')
-                    : t('Newsletter abonnieren', 'Subscribe to Newsletter')}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-
-                <p className="text-xs text-muted-foreground text-center">
-                  {t(
-                    'Kostenlos. Deine Daten gehören dir.',
-                    'Free. Your data belongs to you.'
-                  )}
-                </p>
-              </form>
-            )}
+            <iframe
+              src="https://ef9fdca1.sibforms.com/serve/MUIFAFKCfXrkUJy1k5jZLkXSHUrM82zTU-h428AlVvOQm_AoHduOR1SDpLFKeHrNqat1tdVhPlUv-DzY8pY8-QniwLexyOTxHO8K4QX7Tfbz2bP4h9I_vVcniuNt5nHYvUlLbTr98T81qIXqbwvMzCCZwBYvtvzdYcrUe539-Ge30QlGxkxHlYubByLWkDtip1oDP1_3jiGSjtMe6A=="
+              width="100%"
+              height="520"
+              frameBorder="0"
+              scrolling="auto"
+              className="rounded-2xl border border-border"
+            />
           </motion.div>
         </div>
       </section>
