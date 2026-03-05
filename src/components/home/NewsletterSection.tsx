@@ -26,21 +26,28 @@ const NewsletterSection = () => {
               "There's no single right path. But there is your next step. And it starts here."
             )}
           </h2>
-          <div className="pt-4">
+          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
+            {t(
+              '🚀 Wir launchen bald! Abonniere unseren Newsletter, um als Erste:r vom Start zu erfahren – oder lade dir jetzt unser kostenloses 2Morrow Lab Life Design Guidebook herunter. Du möchtest 2Morrow Lab aktiv mitgestalten? Über den Newsletter-Signup kannst du dich direkt an der Entwicklung beteiligen.',
+              "🚀 We're launching soon! Subscribe to our newsletter to be the first to know – or download our free 2Morrow Lab Life Design Guidebook now. Want to actively shape 2Morrow Lab? Through the newsletter signup, you can directly participate in its development."
+            )}
+          </p>
+          <div className="pt-4 flex flex-wrap justify-center gap-4">
             <Link
               to="/newsletter"
               className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-10 py-5 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200"
             >
-              {t('Jetzt starten', 'Get Started')}
+              {t('Newsletter abonnieren', 'Subscribe to Newsletter')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
+            <a
+              href="/newsletter"
+              className="group inline-flex items-center gap-2 border-2 border-white/20 text-white px-10 py-5 rounded-full font-heading font-bold text-base hover:bg-white/10 transition-colors duration-200"
+            >
+              {t('Free Guidebook Download', 'Free Guidebook Download')}
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
-          <p className="text-sm text-white/40">
-            {t(
-              'Kostenlos. Ohne Anmeldezwang. Deine Daten gehören dir.',
-              'Free. No sign-up required. Your data belongs to you.'
-            )}
-          </p>
         </motion.div>
       </div>
     </section>
