@@ -79,7 +79,7 @@ const Companies = () => {
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-6">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight text-balance">
-              {t('Warum jetzt: Kulturclash, KI – und das Ende des Durchschnitts', 'Why now: Culture clash, AI — and the end of averages')}
+              {t('Warum jetzt: Kulturclash, KI und der Bedarf nach individuellen Lösungen', 'Why now: Culture clash, AI and the need for individual solutions')}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed max-w-3xl">
               <p className="whitespace-pre-line">{t(
