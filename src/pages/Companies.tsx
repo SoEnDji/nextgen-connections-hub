@@ -309,7 +309,7 @@ const Companies = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div {...fadeUp} className="space-y-8">
             <h2 className="font-heading text-3xl md:text-4xl font-bold glow-text">
-              {t('So läuft eine Partnerschaft ab', 'How a partnership works')}
+              {t('So kann die Zusammenarbeit aussehen:', 'How collaboration can look:')}
             </h2>
             <p className="text-lg text-white/60">
               {t('(Beispiel – wird modular zusammengestellt)', '(Example — assembled modularly)')}
