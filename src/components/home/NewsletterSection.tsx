@@ -28,7 +28,7 @@ const NewsletterSection = () => {
           </h2>
           <div className="pt-4">
             <Link
-              to="/programs"
+              to="/newsletter"
               className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-10 py-5 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200"
             >
               {t('Jetzt starten', 'Get Started')}
