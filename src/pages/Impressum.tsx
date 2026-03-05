@@ -121,8 +121,8 @@ const Impressum = () => {
                     <h3 className="font-semibold text-foreground mb-2">{t('Besondere Nutzungsbedingungen', 'Special Terms of Use')}</h3>
                     <p>
                       {t(
-                        'Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Punkten (1) bis (4) abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.',
-                        'To the extent that special conditions for individual uses of this website deviate from the aforementioned points (1) to (4), this will be explicitly indicated at the corresponding location. In such cases, the special terms of use shall apply in the respective individual case.'
+                        'Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Punkten abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.',
+                        'To the extent that special conditions for individual uses of this website deviate from the aforementioned points, this will be explicitly indicated at the corresponding location. In such cases, the special terms of use shall apply in the respective individual case.'
                       )}
                     </p>
                   </div>
