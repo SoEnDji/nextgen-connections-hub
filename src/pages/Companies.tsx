@@ -50,7 +50,7 @@ const Companies = () => {
                   to="/contact"
                   className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3.5 rounded-lg font-heading font-semibold text-sm hover:bg-accent-glow transition-all duration-300 glow-accent"
                 >
-                  {t('Partnerschaft anfragen', 'Request Partnership')}
+                   {t('Zusammenarbeit anfragen', 'Request Collaboration')}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
