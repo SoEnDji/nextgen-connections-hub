@@ -31,10 +31,15 @@ const Datenschutz = () => {
                   )}
                 </p>
                 <p className="mt-2">
-                  2Morrow Lab<br />
-                  [Straße und Hausnummer]<br />
-                  [PLZ Ort]<br />
-                  E-Mail: hello@2morrowlab.com
+                  2Morrow Lab™ ist eine Marke der<br />
+                  Kairos & Fortuna Ventures GmbH<br />
+                  <br />
+                  Boxhagener Straße 96<br />
+                  10245 Berlin-Friedrichshain<br />
+                  <br />
+                  {t('Vertreten durch', 'Represented by')}: Dr. Sohrab Noorsalehi-Garakani und Vera Plümer<br />
+                  <br />
+                  E-Mail: info@2morrowlab.org
                 </p>
               </div>
 
