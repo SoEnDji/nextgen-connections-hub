@@ -5,7 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Home from "./pages/Home";
-import Programs from "./pages/Programs";
 import ForSchools from "./pages/ForSchools";
 import Companies from "./pages/Companies";
 import About from "./pages/About";
@@ -15,6 +14,8 @@ import DerWeg from "./pages/DerWeg";
 import NetworkPartners from "./pages/NetworkPartners";
 import Booking from "./pages/Booking";
 import Newsletter from "./pages/Newsletter";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,7 +29,6 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/programs" element={<Programs />} />
             <Route path="/schools" element={<ForSchools />} />
             <Route path="/companies" element={<Companies />} />
             <Route path="/about" element={<About />} />
