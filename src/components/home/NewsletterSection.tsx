@@ -48,6 +48,31 @@ const NewsletterSection = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
+          
+          <div className="pt-8 flex justify-center gap-6">
+            <p className="text-xs text-white/50 leading-relaxed max-w-xl">
+              {t(
+                'Life Design & Zukunftsinspiration häppchenweise:',
+                'Life Design & Future Inspiration in bite-sized pieces:'
+              )}
+            </p>
+            <a
+              href="https://www.instagram.com/2morrow_lab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-accent-lime hover:text-foreground transition-colors duration-200"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="#"
+              className="group inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-accent-lime hover:text-foreground transition-colors duration-200"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5" />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
