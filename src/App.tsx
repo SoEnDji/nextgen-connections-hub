@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import DerWeg from "./pages/DerWeg";
 import NetworkPartners from "./pages/NetworkPartners";
 import Booking from "./pages/Booking";
+import Newsletter from "./pages/Newsletter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
