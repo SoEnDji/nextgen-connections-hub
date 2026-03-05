@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, MessageCircle } from 'lucide-react';
 
 const fade = {
   initial: { opacity: 0, y: 30 },
