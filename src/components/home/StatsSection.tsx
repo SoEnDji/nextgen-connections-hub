@@ -21,8 +21,8 @@ const StatsSection = () => {
     {
       value: '89 %',
       desc: t(
-        'der Gen Z sagen, dass ein Gefühl von Sinn für ihre Zufriedenheit im Job entscheidend ist. (Deloitte, 2025)',
-        'of Gen Z say a sense of purpose is essential for job satisfaction. (Deloitte, 2025)'
+        'der Gen Z sagen, dass ein Gefühl von Sinn für ihre Zufriedenheit im Job entscheidend ist.',
+        'of Gen Z say a sense of purpose is essential for job satisfaction.'
       ),
     },
     {
