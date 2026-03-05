@@ -337,7 +337,7 @@ const DerWeg = () => {
 
             <div className="text-center">
               <Link
-                to="/programs"
+                to="/newsletter"
                 className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-10 py-4 rounded-full font-heading font-bold text-base hover:scale-105 transition-transform duration-200"
               >
                 {t('Early Access sichern', 'Get Early Access')}
