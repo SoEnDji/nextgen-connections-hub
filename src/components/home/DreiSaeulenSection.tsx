@@ -139,7 +139,7 @@ const DreiSaeulenSection = () => {
           />
           <div className="mt-4">
             <Link
-              to="/programs"
+              to="/newsletter"
               className="inline-flex items-center gap-2 bg-accent-lime text-foreground font-heading font-bold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
             >
               {t('Early Access sichern', 'Get Early Access')}
