@@ -27,9 +27,6 @@ const Footer = () => {
               {t('Navigation', 'Navigation')}
             </h4>
             <nav className="flex flex-col gap-2.5">
-              <Link to="/programs" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
-                {t('Programme', 'Programs')}
-              </Link>
               <Link to="/schools" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
                 {t('Für Schulen', 'For Schools')}
               </Link>
@@ -52,8 +49,8 @@ const Footer = () => {
               {t('Rechtliches', 'Legal')}
             </h4>
             <nav className="flex flex-col gap-2.5">
-              <span className="text-sm opacity-60">{t('Impressum', 'Imprint')}</span>
-              <span className="text-sm opacity-60">{t('Datenschutz', 'Privacy')}</span>
+              <Link to="/impressum" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">{t('Impressum', 'Imprint')}</Link>
+              <Link to="/datenschutz" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">{t('Datenschutz', 'Privacy')}</Link>
             </nav>
           </div>
         </div>
