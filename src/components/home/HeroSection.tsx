@@ -63,7 +63,7 @@ const HeroSection = () => {
             className="flex flex-wrap gap-4">
 
             <Link
-              to="/programs"
+              to="/newsletter"
               className="group inline-flex items-center gap-2 bg-accent-lime text-foreground px-8 py-4 rounded-full font-heading font-bold text-sm hover:scale-105 transition-transform duration-200">
 
               {t('Starte deine Reise', 'Start Your Journey')}

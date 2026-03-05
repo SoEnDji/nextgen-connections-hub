@@ -38,6 +38,8 @@ const App = () => (
             <Route path="/netzwerkpartner" element={<NetworkPartners />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/newsletter" element={<Newsletter />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
