@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import DerWeg from "./pages/DerWeg";
 import NetworkPartners from "./pages/NetworkPartners";
 import Booking from "./pages/Booking";
+import Newsletter from "./pages/Newsletter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/der-weg" element={<DerWeg />} />
             <Route path="/netzwerkpartner" element={<NetworkPartners />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/newsletter" element={<Newsletter />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
