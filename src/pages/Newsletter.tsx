@@ -1,7 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
-import { useState, FormEvent, useRef } from 'react';
-import { ArrowRight, CheckCircle, AlertCircle } from 'lucide-react';
 import Layout from '@/components/Layout';
 
 const fadeUp = {
@@ -11,72 +9,8 @@ const fadeUp = {
   transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
 };
 
-const BREVO_ACTION =
-  'https://ef9fdca1.sibforms.com/serve/MUIFAFKCfXrkUJy1k5jZLkXSHUrM82zTU-h428AlVvOQm_AoHduOR1SDpLFKeHrNqat1tdVhPlUv-DzY8pY8-QniwLexyOTxHO8K4QX7Tfbz2bP4h9I_vVcniuNt5nHYvUlLbTr98T81qIXqbwvMzCCZwBYvtvzdYcrUe539-Ge30QlGxkxHlYubByLWkDtip1oDP1_3jiGSjtMe6A==';
-
-type Status = 'idle' | 'loading' | 'success' | 'error';
-
 const Newsletter = () => {
   const { t } = useLanguage();
-  const [email, setEmail] = useState('');
-  const [optIn, setOptIn] = useState(false);
-  const [status, setStatus] = useState<Status>('idle');
-  const formRef = useRef<HTMLFormElement>(null);
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    if (!email || !optIn) return;
-
-    setStatus('loading');
-    try {
-      // Submit via hidden iframe to avoid CORS issues with Brevo
-      const iframe = document.createElement('iframe');
-      iframe.name = 'sib-submit';
-      iframe.style.display = 'none';
-      document.body.appendChild(iframe);
-
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = BREVO_ACTION;
-      form.target = 'sib-submit';
-
-      const emailInput = document.createElement('input');
-      emailInput.name = 'EMAIL';
-      emailInput.value = email;
-      form.appendChild(emailInput);
-
-      const optInInput = document.createElement('input');
-      optInInput.name = 'OPT_IN';
-      optInInput.value = '1';
-      form.appendChild(optInInput);
-
-      const localeInput = document.createElement('input');
-      localeInput.name = 'locale';
-      localeInput.value = 'en';
-      form.appendChild(localeInput);
-
-      // Honeypot
-      const honeypot = document.createElement('input');
-      honeypot.name = 'email_address_check';
-      honeypot.value = '';
-      form.appendChild(honeypot);
-
-      document.body.appendChild(form);
-      form.submit();
-
-      // Clean up after short delay
-      setTimeout(() => {
-        document.body.removeChild(form);
-        document.body.removeChild(iframe);
-      }, 2000);
-
-      setStatus('success');
-      setEmail('');
-      setOptIn(false);
-    } catch {
-      setStatus('error');
-    }
-  };
 
   return (
     <Layout>
