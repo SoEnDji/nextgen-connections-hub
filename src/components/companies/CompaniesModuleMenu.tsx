@@ -195,7 +195,7 @@ const CompaniesModuleMenu = () => {
       <div className="max-w-4xl mx-auto px-6">
         <motion.div {...fadeUp} className="space-y-4 mb-10">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            {t('Module-Menü (Baukasten)', 'Module Menu (Building Blocks)')}
+            {t('Unsere Angebotsmodule für Maßgenschneiderte Lösungen und Programme:', 'Our service modules for customized solutions and programs:')}
           </h2>
         </motion.div>
 
