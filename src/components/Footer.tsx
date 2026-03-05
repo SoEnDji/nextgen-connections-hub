@@ -27,9 +27,6 @@ const Footer = () => {
               {t('Navigation', 'Navigation')}
             </h4>
             <nav className="flex flex-col gap-2.5">
-              <Link to="/programs" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
-                {t('Programme', 'Programs')}
-              </Link>
               <Link to="/schools" className="text-sm opacity-60 hover:opacity-100 hover:text-accent transition-all">
                 {t('Für Schulen', 'For Schools')}
               </Link>
