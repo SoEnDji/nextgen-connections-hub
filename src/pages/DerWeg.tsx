@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, MessageCircle } from 'lucide-react';
 import Layout from '@/components/Layout';
 import effizienzPrinzip from '@/assets/effizienz-prinzip.png';
 import lifeDesignPrinzip from '@/assets/life-design-prinzip.png';
